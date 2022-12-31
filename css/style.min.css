@@ -1335,7 +1335,7 @@ body[data-layout-mode=dark] .breadcrumb {
 }
 
 .home {
-  min-height: 100vh;
+  min-height: clamp(768px, 100vh, 1080px);
   align-items: center;
   display: flex;
 }
@@ -1969,6 +1969,16 @@ body[data-layout-mode=dark] .home-6 .bottom-item .video-button i {
   transform: scale(1.05);
 }
 
+.members .nav-pills .nav-link {
+  padding: 8px 24px;
+  color: #2fb4ae;
+  font-size: 18px;
+}
+.members .nav-pills .nav-link.active {
+  background-color: #2fb4ae;
+  color: #ffffff;
+}
+
 .members-group-title span {
   border-bottom: 5px solid #2fb4ae;
 }
@@ -1993,6 +2003,15 @@ body[data-layout-mode=dark] .home-6 .bottom-item .video-button i {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.teaching .nav-pills .nav-link {
+  padding: 8px 24px;
+  color: #2fb4ae;
+  font-size: 18px;
+}
+.teaching .nav-pills .nav-link.active {
+  background-color: #2fb4ae;
+  color: #ffffff;
+}
 .teaching .info-item {
   border-radius: 20px;
   background-color: #ffffff;

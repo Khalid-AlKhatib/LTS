@@ -367,3 +367,12 @@ function fadeIn() {
   }, 200);
 }
 
+// function adjustViewHeight() {
+//   let realWindowHeight = window.outerHeight + 'px';
+//   document.getElementById('home').style.minHeight = realWindowHeight;
+//   console.log(document.getElementById('home'));
+// }
+
+// window.onresize = adjustViewHeight;
+
+// adjustViewHeight();

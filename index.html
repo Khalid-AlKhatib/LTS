@@ -447,7 +447,7 @@
     <!-- end service -->
 
     <!-- start counter -->
-    <section class="section people" id="members">
+    <section class="section members" id="members">
         <!-- start container -->
         <div class="container">
 
@@ -461,276 +461,284 @@
                     </div>
                 </div>
             </div>
-
             <div class="row justify-content-center">
                 <div class="members-group col-12 col-lg-10">
-                    <h3 class="members-group-title text-center mb-4"><span>PhDs</span></h3>
-                    <div class="member mt-4 p-4">
-                        <div class="row gy-4 gx-4 gx-xl-5">
-                            <div class="member-left-col col-12 col-md-4 col-xl-3">
-                                <div class="member-image">
-                                    <img src="images/members/img1.png" alt="Member 1">
-                                </div>
-                            </div>
-                            <div class="member-right-col col-12 col-md-8 col-xl-9">
-                                <div class="member-content d-flex flex-column h-100">
-                                    <div>
-                                        <h4 class="member-name mb-4">Member 1</h4>
-                                        <div class="row mb-4">
-                                            <div class="col-12 col-md-6">
-                                                <p class="member-interest mb-2"><i
-                                                        class="mdi mdi-test-tube text-primary"></i> Research Interest:
-                                                    <span>Topic 1</span></p>
-                                                <p class="member-phone mb-2"><i class="mdi mdi-phone text-primary"></i>
-                                                    Phone: <a href="tel: +49 511 762 5301">+49 511 762 5301</a></p>
-                                                <p class="member-email mb-2"><i class="mdi mdi-email text-primary"></i>
-                                                    Email: <a href="mailto:member1@example.com">member1@example.com</a>
-                                                </p>
-                                            </div>
-                                            <div class="col-12 col-md-6">
-                                                <p class="member-address mb-2"><i
-                                                        class="mdi mdi-map-marker text-primary"></i> Address:
-                                                    <span>Appelstraße 9a 30167 Hannover</span></p>
-                                                <p class="member-building mb-2"><i
-                                                        class="mdi mdi-office-building text-primary"></i> Building:
-                                                    <span>3408</span></p>
-                                                <p class="member-roommb-2"><i class="mdi mdi-door text-primary"></i>
-                                                    Room: <span>1316</span></p>
-                                            </div>
+                    <ul class="nav nav-pills justify-content-center" id="membersTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="phdmembers-tab" data-bs-toggle="tab" data-bs-target="#phdmembers"
+                                type="button" role="tab" aria-controls="phdmembers" aria-selected="true">PhD</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="mastermembers-tab" data-bs-toggle="tab" data-bs-target="#mastermembers"
+                                type="button" role="tab" aria-controls="mastermembers" aria-selected="false">Master</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-5" id="membersTabContent">
+                        <div class="tab-pane fade show active" id="phdmembers" role="tabpanel" aria-labelledby="phdmembers-tab">
+                            <div class="member mt-4 p-4">
+                                <div class="row gy-4 gx-4 gx-xl-5">
+                                    <div class="member-left-col col-12 col-md-4 col-xl-3">
+                                        <div class="member-image">
+                                            <img src="images/members/img1.png" alt="Member 1">
                                         </div>
                                     </div>
-                                    <div class="mt-auto text-right">
-                                        <a href="members/member-1.html" class="text-primary border-2 border-primary border-bottom">View
-                                            Profile <img src="images/home/right-arrow-primary.png" alt=""
-                                                class="img-fluid mb-1 ms-2"></a>
+                                    <div class="member-right-col col-12 col-md-8 col-xl-9">
+                                        <div class="member-content d-flex flex-column h-100">
+                                            <div>
+                                                <h4 class="member-name mb-4">Member 1</h4>
+                                                <div class="row mb-4">
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="member-interest mb-2"><i
+                                                                class="mdi mdi-test-tube text-primary"></i> Research Interest:
+                                                            <span>Topic 1</span></p>
+                                                        <p class="member-phone mb-2"><i class="mdi mdi-phone text-primary"></i>
+                                                            Phone: <a href="tel: +49 511 762 5301">+49 511 762 5301</a></p>
+                                                        <p class="member-email mb-2"><i class="mdi mdi-email text-primary"></i>
+                                                            Email: <a href="mailto:member1@example.com">member1@example.com</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="member-address mb-2"><i
+                                                                class="mdi mdi-map-marker text-primary"></i> Address:
+                                                            <span>Appelstraße 9a 30167 Hannover</span></p>
+                                                        <p class="member-building mb-2"><i
+                                                                class="mdi mdi-office-building text-primary"></i> Building:
+                                                            <span>3408</span></p>
+                                                        <p class="member-roommb-2"><i class="mdi mdi-door text-primary"></i>
+                                                            Room: <span>1316</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-auto text-right">
+                                                <a href="members/member-1.html" class="text-primary border-2 border-primary border-bottom">View
+                                                    Profile <img src="images/home/right-arrow-primary.png" alt=""
+                                                        class="img-fluid mb-1 ms-2"></a>
+                                            </div>
+        
+                                        </div>
                                     </div>
-
+                                </div>
+                            </div>
+                            <div class="member mt-4 p-4">
+                                <div class="row gy-4 gx-4 gx-xl-5">
+                                    <div class="member-left-col col-12 col-md-4 col-xl-3">
+                                        <div class="member-image">
+                                            <img src="images/members/img2.png" alt="Member 1">
+                                        </div>
+                                    </div>
+                                    <div class="member-right-col col-12 col-md-8 col-xl-9">
+                                        <div class="member-content d-flex flex-column h-100">
+                                            <div>
+                                                <h4 class="member-name mb-4">Member 2</h4>
+                                                <div class="row mb-4">
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="member-interest mb-2"><i
+                                                                class="mdi mdi-test-tube text-primary"></i> Research Interest:
+                                                            <span>Topic 1</span></p>
+                                                        <p class="member-phone mb-2"><i class="mdi mdi-phone text-primary"></i>
+                                                            Phone: <a href="tel: +49 511 762 5301">+49 511 762 5301</a></p>
+                                                        <p class="member-email mb-2"><i class="mdi mdi-email text-primary"></i>
+                                                            Email: <a href="mailto:member1@example.com">member1@example.com</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="member-address mb-2"><i
+                                                                class="mdi mdi-map-marker text-primary"></i> Address:
+                                                            <span>Appelstraße 9a 30167 Hannover</span></p>
+                                                        <p class="member-building mb-2"><i
+                                                                class="mdi mdi-office-building text-primary"></i> Building:
+                                                            <span>3408</span></p>
+                                                        <p class="member-roommb-2"><i class="mdi mdi-door text-primary"></i>
+                                                            Room: <span>1316</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-auto text-right">
+                                                <a href="members/member-2.html" class="text-primary border-2 border-primary border-bottom">View
+                                                    Profile <img src="images/home/right-arrow-primary.png" alt=""
+                                                        class="img-fluid mb-1 ms-2"></a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member mt-4 p-4">
+                                <div class="row gy-4 gx-4 gx-xl-5">
+                                    <div class="member-left-col col-12 col-md-4 col-xl-3">
+                                        <div class="member-image">
+                                            <img src="images/members/img3.png" alt="Member 1">
+                                        </div>
+                                    </div>
+                                    <div class="member-right-col col-12 col-md-8 col-xl-9">
+                                        <div class="member-content d-flex flex-column h-100">
+                                            <div>
+                                                <h4 class="member-name mb-4">Member 3</h4>
+                                                <div class="row mb-4">
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="member-interest mb-2"><i
+                                                                class="mdi mdi-test-tube text-primary"></i> Research Interest:
+                                                            <span>Topic 1</span></p>
+                                                        <p class="member-phone mb-2"><i class="mdi mdi-phone text-primary"></i>
+                                                            Phone: <a href="tel: +49 511 762 5301">+49 511 762 5301</a></p>
+                                                        <p class="member-email mb-2"><i class="mdi mdi-email text-primary"></i>
+                                                            Email: <a href="mailto:member1@example.com">member1@example.com</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="member-address mb-2"><i
+                                                                class="mdi mdi-map-marker text-primary"></i> Address:
+                                                            <span>Appelstraße 9a 30167 Hannover</span></p>
+                                                        <p class="member-building mb-2"><i
+                                                                class="mdi mdi-office-building text-primary"></i> Building:
+                                                            <span>3408</span></p>
+                                                        <p class="member-roommb-2"><i class="mdi mdi-door text-primary"></i>
+                                                            Room: <span>1316</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-auto text-right">
+                                                <a href="members/member-3.html" class="text-primary border-2 border-primary border-bottom">View
+                                                    Profile <img src="images/home/right-arrow-primary.png" alt=""
+                                                        class="img-fluid mb-1 ms-2"></a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="member mt-4 p-4">
-                        <div class="row gy-4 gx-4 gx-xl-5">
-                            <div class="member-left-col col-12 col-md-4 col-xl-3">
-                                <div class="member-image">
-                                    <img src="images/members/img2.png" alt="Member 1">
-                                </div>
-                            </div>
-                            <div class="member-right-col col-12 col-md-8 col-xl-9">
-                                <div class="member-content d-flex flex-column h-100">
-                                    <div>
-                                        <h4 class="member-name mb-4">Member 2</h4>
-                                        <div class="row mb-4">
-                                            <div class="col-12 col-md-6">
-                                                <p class="member-interest mb-2"><i
-                                                        class="mdi mdi-test-tube text-primary"></i> Research Interest:
-                                                    <span>Topic 1</span></p>
-                                                <p class="member-phone mb-2"><i class="mdi mdi-phone text-primary"></i>
-                                                    Phone: <a href="tel: +49 511 762 5301">+49 511 762 5301</a></p>
-                                                <p class="member-email mb-2"><i class="mdi mdi-email text-primary"></i>
-                                                    Email: <a href="mailto:member1@example.com">member1@example.com</a>
-                                                </p>
-                                            </div>
-                                            <div class="col-12 col-md-6">
-                                                <p class="member-address mb-2"><i
-                                                        class="mdi mdi-map-marker text-primary"></i> Address:
-                                                    <span>Appelstraße 9a 30167 Hannover</span></p>
-                                                <p class="member-building mb-2"><i
-                                                        class="mdi mdi-office-building text-primary"></i> Building:
-                                                    <span>3408</span></p>
-                                                <p class="member-roommb-2"><i class="mdi mdi-door text-primary"></i>
-                                                    Room: <span>1316</span></p>
-                                            </div>
+                        <div class="tab-pane fade" id="mastermembers" role="tabpanel" aria-labelledby="mastermembers-tab">
+                            <div class="member mt-4 p-4">
+                                <div class="row gy-4 gx-4 gx-xl-5">
+                                    <div class="member-left-col col-12 col-md-4 col-xl-3">
+                                        <div class="member-image">
+                                            <img src="images/members/img1.png" alt="Member 1">
                                         </div>
                                     </div>
-                                    <div class="mt-auto text-right">
-                                        <a href="members/member-2.html" class="text-primary border-2 border-primary border-bottom">View
-                                            Profile <img src="images/home/right-arrow-primary.png" alt=""
-                                                class="img-fluid mb-1 ms-2"></a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="member mt-4 p-4">
-                        <div class="row gy-4 gx-4 gx-xl-5">
-                            <div class="member-left-col col-12 col-md-4 col-xl-3">
-                                <div class="member-image">
-                                    <img src="images/members/img3.png" alt="Member 1">
-                                </div>
-                            </div>
-                            <div class="member-right-col col-12 col-md-8 col-xl-9">
-                                <div class="member-content d-flex flex-column h-100">
-                                    <div>
-                                        <h4 class="member-name mb-4">Member 3</h4>
-                                        <div class="row mb-4">
-                                            <div class="col-12 col-md-6">
-                                                <p class="member-interest mb-2"><i
-                                                        class="mdi mdi-test-tube text-primary"></i> Research Interest:
-                                                    <span>Topic 1</span></p>
-                                                <p class="member-phone mb-2"><i class="mdi mdi-phone text-primary"></i>
-                                                    Phone: <a href="tel: +49 511 762 5301">+49 511 762 5301</a></p>
-                                                <p class="member-email mb-2"><i class="mdi mdi-email text-primary"></i>
-                                                    Email: <a href="mailto:member1@example.com">member1@example.com</a>
-                                                </p>
+                                    <div class="member-right-col col-12 col-md-8 col-xl-9">
+                                        <div class="member-content d-flex flex-column h-100">
+                                            <div>
+                                                <h4 class="member-name mb-4">Member 4</h4>
+                                                <div class="row mb-4">
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="member-interest mb-2"><i
+                                                                class="mdi mdi-test-tube text-primary"></i> Research Interest:
+                                                            <span>Topic 1</span></p>
+                                                        <p class="member-phone mb-2"><i class="mdi mdi-phone text-primary"></i>
+                                                            Phone: <a href="tel: +49 511 762 5301">+49 511 762 5301</a></p>
+                                                        <p class="member-email mb-2"><i class="mdi mdi-email text-primary"></i>
+                                                            Email: <a href="mailto:member1@example.com">member1@example.com</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="member-address mb-2"><i
+                                                                class="mdi mdi-map-marker text-primary"></i> Address:
+                                                            <span>Appelstraße 9a 30167 Hannover</span></p>
+                                                        <p class="member-building mb-2"><i
+                                                                class="mdi mdi-office-building text-primary"></i> Building:
+                                                            <span>3408</span></p>
+                                                        <p class="member-roommb-2"><i class="mdi mdi-door text-primary"></i>
+                                                            Room: <span>1316</span></p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-12 col-md-6">
-                                                <p class="member-address mb-2"><i
-                                                        class="mdi mdi-map-marker text-primary"></i> Address:
-                                                    <span>Appelstraße 9a 30167 Hannover</span></p>
-                                                <p class="member-building mb-2"><i
-                                                        class="mdi mdi-office-building text-primary"></i> Building:
-                                                    <span>3408</span></p>
-                                                <p class="member-roommb-2"><i class="mdi mdi-door text-primary"></i>
-                                                    Room: <span>1316</span></p>
+                                            <div class="mt-auto text-right">
+                                                <a href="members/member-4.html" class="text-primary border-2 border-primary border-bottom">View
+                                                    Profile <img src="images/home/right-arrow-primary.png" alt=""
+                                                        class="img-fluid mb-1 ms-2"></a>
                                             </div>
+        
                                         </div>
                                     </div>
-                                    <div class="mt-auto text-right">
-                                        <a href="members/member-3.html" class="text-primary border-2 border-primary border-bottom">View
-                                            Profile <img src="images/home/right-arrow-primary.png" alt=""
-                                                class="img-fluid mb-1 ms-2"></a>
-                                    </div>
-
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="members-group col-12 col-lg-10 mt-5">
-                    <h3 class="members-group-title text-center mb-4"><span>Masters</span></h3>
-                    <div class="member mt-4 p-4">
-                        <div class="row gy-4 gx-4 gx-xl-5">
-                            <div class="member-left-col col-12 col-md-4 col-xl-3">
-                                <div class="member-image">
-                                    <img src="images/members/img1.png" alt="Member 1">
-                                </div>
-                            </div>
-                            <div class="member-right-col col-12 col-md-8 col-xl-9">
-                                <div class="member-content d-flex flex-column h-100">
-                                    <div>
-                                        <h4 class="member-name mb-4">Member 4</h4>
-                                        <div class="row mb-4">
-                                            <div class="col-12 col-md-6">
-                                                <p class="member-interest mb-2"><i
-                                                        class="mdi mdi-test-tube text-primary"></i> Research Interest:
-                                                    <span>Topic 1</span></p>
-                                                <p class="member-phone mb-2"><i class="mdi mdi-phone text-primary"></i>
-                                                    Phone: <a href="tel: +49 511 762 5301">+49 511 762 5301</a></p>
-                                                <p class="member-email mb-2"><i class="mdi mdi-email text-primary"></i>
-                                                    Email: <a href="mailto:member1@example.com">member1@example.com</a>
-                                                </p>
-                                            </div>
-                                            <div class="col-12 col-md-6">
-                                                <p class="member-address mb-2"><i
-                                                        class="mdi mdi-map-marker text-primary"></i> Address:
-                                                    <span>Appelstraße 9a 30167 Hannover</span></p>
-                                                <p class="member-building mb-2"><i
-                                                        class="mdi mdi-office-building text-primary"></i> Building:
-                                                    <span>3408</span></p>
-                                                <p class="member-roommb-2"><i class="mdi mdi-door text-primary"></i>
-                                                    Room: <span>1316</span></p>
-                                            </div>
+                            <div class="member mt-4 p-4">
+                                <div class="row gy-4 gx-4 gx-xl-5">
+                                    <div class="member-left-col col-12 col-md-4 col-xl-3">
+                                        <div class="member-image">
+                                            <img src="images/members/img2.png" alt="Member 1">
                                         </div>
                                     </div>
-                                    <div class="mt-auto text-right">
-                                        <a href="members/member-4.html" class="text-primary border-2 border-primary border-bottom">View
-                                            Profile <img src="images/home/right-arrow-primary.png" alt=""
-                                                class="img-fluid mb-1 ms-2"></a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="member mt-4 p-4">
-                        <div class="row gy-4 gx-4 gx-xl-5">
-                            <div class="member-left-col col-12 col-md-4 col-xl-3">
-                                <div class="member-image">
-                                    <img src="images/members/img2.png" alt="Member 1">
-                                </div>
-                            </div>
-                            <div class="member-right-col col-12 col-md-8 col-xl-9">
-                                <div class="member-content d-flex flex-column h-100">
-                                    <div>
-                                        <h4 class="member-name mb-4">Member 2</h4>
-                                        <div class="row mb-4">
-                                            <div class="col-12 col-md-6">
-                                                <p class="member-interest mb-2"><i
-                                                        class="mdi mdi-test-tube text-primary"></i> Research Interest:
-                                                    <span>Topic 1</span></p>
-                                                <p class="member-phone mb-2"><i class="mdi mdi-phone text-primary"></i>
-                                                    Phone: <a href="tel: +49 511 762 5301">+49 511 762 5301</a></p>
-                                                <p class="member-email mb-2"><i class="mdi mdi-email text-primary"></i>
-                                                    Email: <a href="mailto:member1@example.com">member1@example.com</a>
-                                                </p>
+                                    <div class="member-right-col col-12 col-md-8 col-xl-9">
+                                        <div class="member-content d-flex flex-column h-100">
+                                            <div>
+                                                <h4 class="member-name mb-4">Member 2</h4>
+                                                <div class="row mb-4">
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="member-interest mb-2"><i
+                                                                class="mdi mdi-test-tube text-primary"></i> Research Interest:
+                                                            <span>Topic 1</span></p>
+                                                        <p class="member-phone mb-2"><i class="mdi mdi-phone text-primary"></i>
+                                                            Phone: <a href="tel: +49 511 762 5301">+49 511 762 5301</a></p>
+                                                        <p class="member-email mb-2"><i class="mdi mdi-email text-primary"></i>
+                                                            Email: <a href="mailto:member1@example.com">member1@example.com</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="member-address mb-2"><i
+                                                                class="mdi mdi-map-marker text-primary"></i> Address:
+                                                            <span>Appelstraße 9a 30167 Hannover</span></p>
+                                                        <p class="member-building mb-2"><i
+                                                                class="mdi mdi-office-building text-primary"></i> Building:
+                                                            <span>3408</span></p>
+                                                        <p class="member-roommb-2"><i class="mdi mdi-door text-primary"></i>
+                                                            Room: <span>1316</span></p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-12 col-md-6">
-                                                <p class="member-address mb-2"><i
-                                                        class="mdi mdi-map-marker text-primary"></i> Address:
-                                                    <span>Appelstraße 9a 30167 Hannover</span></p>
-                                                <p class="member-building mb-2"><i
-                                                        class="mdi mdi-office-building text-primary"></i> Building:
-                                                    <span>3408</span></p>
-                                                <p class="member-roommb-2"><i class="mdi mdi-door text-primary"></i>
-                                                    Room: <span>1316</span></p>
+                                            <div class="mt-auto text-right">
+                                                <a href="members/member-5.html" class="text-primary border-2 border-primary border-bottom">View
+                                                    Profile <img src="images/home/right-arrow-primary.png" alt=""
+                                                        class="img-fluid mb-1 ms-2"></a>
                                             </div>
+        
                                         </div>
                                     </div>
-                                    <div class="mt-auto text-right">
-                                        <a href="members/member-5.html" class="text-primary border-2 border-primary border-bottom">View
-                                            Profile <img src="images/home/right-arrow-primary.png" alt=""
-                                                class="img-fluid mb-1 ms-2"></a>
-                                    </div>
-
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="member mt-4 p-4">
-                        <div class="row gy-4 gx-4 gx-xl-5">
-                            <div class="member-left-col col-12 col-md-4 col-xl-3">
-                                <div class="member-image">
-                                    <img src="images/members/img3.png" alt="Member 1">
-                                </div>
-                            </div>
-                            <div class="member-right-col col-12 col-md-8 col-xl-9">
-                                <div class="member-content d-flex flex-column h-100">
-                                    <div>
-                                        <h4 class="member-name mb-4">Member 3</h4>
-                                        <div class="row mb-4">
-                                            <div class="col-12 col-md-6">
-                                                <p class="member-interest mb-2"><i
-                                                        class="mdi mdi-test-tube text-primary"></i> Research Interest:
-                                                    <span>Topic 1</span></p>
-                                                <p class="member-phone mb-2"><i class="mdi mdi-phone text-primary"></i>
-                                                    Phone: <a href="tel: +49 511 762 5301">+49 511 762 5301</a></p>
-                                                <p class="member-email mb-2"><i class="mdi mdi-email text-primary"></i>
-                                                    Email: <a href="mailto:member1@example.com">member1@example.com</a>
-                                                </p>
-                                            </div>
-                                            <div class="col-12 col-md-6">
-                                                <p class="member-address mb-2"><i
-                                                        class="mdi mdi-map-marker text-primary"></i> Address:
-                                                    <span>Appelstraße 9a 30167 Hannover</span></p>
-                                                <p class="member-building mb-2"><i
-                                                        class="mdi mdi-office-building text-primary"></i> Building:
-                                                    <span>3408</span></p>
-                                                <p class="member-roommb-2"><i class="mdi mdi-door text-primary"></i>
-                                                    Room: <span>1316</span></p>
-                                            </div>
+                            <div class="member mt-4 p-4">
+                                <div class="row gy-4 gx-4 gx-xl-5">
+                                    <div class="member-left-col col-12 col-md-4 col-xl-3">
+                                        <div class="member-image">
+                                            <img src="images/members/img3.png" alt="Member 1">
                                         </div>
                                     </div>
-                                    <div class="mt-auto text-right">
-                                        <a href="members/member-6.html" class="text-primary border-2 border-primary border-bottom">View
-                                            Profile <img src="images/home/right-arrow-primary.png" alt=""
-                                                class="img-fluid mb-1 ms-2"></a>
+                                    <div class="member-right-col col-12 col-md-8 col-xl-9">
+                                        <div class="member-content d-flex flex-column h-100">
+                                            <div>
+                                                <h4 class="member-name mb-4">Member 3</h4>
+                                                <div class="row mb-4">
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="member-interest mb-2"><i
+                                                                class="mdi mdi-test-tube text-primary"></i> Research Interest:
+                                                            <span>Topic 1</span></p>
+                                                        <p class="member-phone mb-2"><i class="mdi mdi-phone text-primary"></i>
+                                                            Phone: <a href="tel: +49 511 762 5301">+49 511 762 5301</a></p>
+                                                        <p class="member-email mb-2"><i class="mdi mdi-email text-primary"></i>
+                                                            Email: <a href="mailto:member1@example.com">member1@example.com</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="member-address mb-2"><i
+                                                                class="mdi mdi-map-marker text-primary"></i> Address:
+                                                            <span>Appelstraße 9a 30167 Hannover</span></p>
+                                                        <p class="member-building mb-2"><i
+                                                                class="mdi mdi-office-building text-primary"></i> Building:
+                                                            <span>3408</span></p>
+                                                        <p class="member-roommb-2"><i class="mdi mdi-door text-primary"></i>
+                                                            Room: <span>1316</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-auto text-right">
+                                                <a href="members/member-6.html" class="text-primary border-2 border-primary border-bottom">View
+                                                    Profile <img src="images/home/right-arrow-primary.png" alt=""
+                                                        class="img-fluid mb-1 ms-2"></a>
+                                            </div>
+        
+                                        </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -788,50 +796,165 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-6">
-                    <a href="#" class="info-item d-block text-body mt-4 pt-2">
-                        <div class="p-4">
-                            <div class="research avatar-sm bg-soft-purple text-center">
-                                <i class="mdi mdi-desktop-classic fs-24 text-purple"></i>
-                            </div>
-                            <h6 class="mt-4">Introduction to Computer Science</h6>
-                            <p class="text-muted fs-15">An introduction to the intellectual enterprises of computer science and the art of programming.</p>
+
+            <ul class="nav nav-pills justify-content-center" id="teachingTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="teaching2022-tab" data-bs-toggle="tab" data-bs-target="#teaching2022"
+                        type="button" role="tab" aria-controls="teaching2022" aria-selected="true">2022</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="teaching2021-tab" data-bs-toggle="tab" data-bs-target="#teaching2021"
+                        type="button" role="tab" aria-controls="teaching2021" aria-selected="false">2021</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="teaching2020-tab" data-bs-toggle="tab" data-bs-target="#teaching2020"
+                        type="button" role="tab" aria-controls="teaching2020" aria-selected="false">2020</button>
+                </li>
+            </ul>
+            <div class="tab-content mt-5" id="teachingTabContent">
+                <div class="tab-pane fade show active" id="teaching2022" role="tabpanel" aria-labelledby="teaching2022-tab">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <a href="#" class="info-item d-block text-body mt-4 pt-2">
+                                <div class="p-4">
+                                    <div class="research avatar-sm bg-soft-purple text-center">
+                                        <i class="mdi mdi-desktop-classic fs-24 text-purple"></i>
+                                    </div>
+                                    <h6 class="mt-4">Introduction to Computer Science 2022</h6>
+                                    <p class="text-muted fs-15">An introduction to the intellectual enterprises of computer science and the art of programming.</p>
+                                </div>
+                            </a>
                         </div>
-                    </a>
+                        <div class="col-lg-6">
+                            <a href="#" class="info-item d-block text-body mt-4 pt-2">
+                                <div class="p-4">
+                                    <div class="research avatar-sm bg-soft-danger text-center">
+                                        <i class="mdi mdi-file-tree fs-24 text-danger"></i>
+                                    </div>
+                                    <h6 class="mt-4">Data Structures and Algorithms 2022</h6>
+                                    <p class="text-muted fs-15">This is a rigorous course on the design and analysis of efficient algorithms and their associated data structures.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="#" class="info-item d-block text-body mt-4 pt-2">
+                                <div class="p-4">
+                                    <div class="research avatar-sm bg-soft-warning text-center">
+                                        <i class="mdi mdi-memory fs-24 text-warning"></i>
+                                    </div>
+                                    <h6 class="mt-4">Introduction to Machine Learning 2022</h6>
+                                    <p class="text-muted fs-15 ">This program will constitute a non-technical introduction to Machine Learning (ML), with particular emphasis on their current applications in different fields</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="#" class="info-item d-block text-body mt-4 pt-2">
+                                <div class="p-4">
+                                    <div class="research avatar-sm bg-soft-success text-center">
+                                        <i class="mdi mdi-memory fs-24 text-success"></i>
+                                    </div>
+                                    <h6 class="mt-4">Advanced Machine Learning 2022</h6>
+                                    <p class="text-muted fs-15 ">This focuses on advanced machine learning topics using various platforms where you will get hands-on experience optimizing, deploying, and scaling ML models.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <a href="#" class="info-item d-block text-body mt-4 pt-2">
-                        <div class="p-4">
-                            <div class="research avatar-sm bg-soft-danger text-center">
-                                <i class="mdi mdi-file-tree fs-24 text-danger"></i>
-                            </div>
-                            <h6 class="mt-4">Data Structures and Algorithms</h6>
-                            <p class="text-muted fs-15">This is a rigorous course on the design and analysis of efficient algorithms and their associated data structures.</p>
+                <div class="tab-pane fade" id="teaching2021" role="tabpanel" aria-labelledby="teaching2021-tab">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <a href="#" class="info-item d-block text-body mt-4 pt-2">
+                                <div class="p-4">
+                                    <div class="research avatar-sm bg-soft-purple text-center">
+                                        <i class="mdi mdi-desktop-classic fs-24 text-purple"></i>
+                                    </div>
+                                    <h6 class="mt-4">Introduction to Computer Science 2021</h6>
+                                    <p class="text-muted fs-15">An introduction to the intellectual enterprises of computer science and the art of programming.</p>
+                                </div>
+                            </a>
                         </div>
-                    </a>
+                        <div class="col-lg-6">
+                            <a href="#" class="info-item d-block text-body mt-4 pt-2">
+                                <div class="p-4">
+                                    <div class="research avatar-sm bg-soft-danger text-center">
+                                        <i class="mdi mdi-file-tree fs-24 text-danger"></i>
+                                    </div>
+                                    <h6 class="mt-4">Data Structures and Algorithms 2021</h6>
+                                    <p class="text-muted fs-15">This is a rigorous course on the design and analysis of efficient algorithms and their associated data structures.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="#" class="info-item d-block text-body mt-4 pt-2">
+                                <div class="p-4">
+                                    <div class="research avatar-sm bg-soft-warning text-center">
+                                        <i class="mdi mdi-memory fs-24 text-warning"></i>
+                                    </div>
+                                    <h6 class="mt-4">Introduction to Machine Learning 2021</h6>
+                                    <p class="text-muted fs-15 ">This program will constitute a non-technical introduction to Machine Learning (ML), with particular emphasis on their current applications in different fields</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="#" class="info-item d-block text-body mt-4 pt-2">
+                                <div class="p-4">
+                                    <div class="research avatar-sm bg-soft-success text-center">
+                                        <i class="mdi mdi-memory fs-24 text-success"></i>
+                                    </div>
+                                    <h6 class="mt-4">Advanced Machine Learning 2021</h6>
+                                    <p class="text-muted fs-15 ">This focuses on advanced machine learning topics using various platforms where you will get hands-on experience optimizing, deploying, and scaling ML models.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <a href="#" class="info-item d-block text-body mt-4 pt-2">
-                        <div class="p-4">
-                            <div class="research avatar-sm bg-soft-warning text-center">
-                                <i class="mdi mdi-memory fs-24 text-warning"></i>
-                            </div>
-                            <h6 class="mt-4">Introduction to Machine Learning</h6>
-                            <p class="text-muted fs-15 ">This program will constitute a non-technical introduction to Machine Learning (ML), with particular emphasis on their current applications in different fields</p>
+                <div class="tab-pane fade" id="teaching2020" role="tabpanel" aria-labelledby="teaching2020-tab">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <a href="#" class="info-item d-block text-body mt-4 pt-2">
+                                <div class="p-4">
+                                    <div class="research avatar-sm bg-soft-purple text-center">
+                                        <i class="mdi mdi-desktop-classic fs-24 text-purple"></i>
+                                    </div>
+                                    <h6 class="mt-4">Introduction to Computer Science 2020</h6>
+                                    <p class="text-muted fs-15">An introduction to the intellectual enterprises of computer science and the art of programming.</p>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-6">
-                    <a href="#" class="info-item d-block text-body mt-4 pt-2">
-                        <div class="p-4">
-                            <div class="research avatar-sm bg-soft-success text-center">
-                                <i class="mdi mdi-memory fs-24 text-success"></i>
-                            </div>
-                            <h6 class="mt-4">Advanced Machine Learning</h6>
-                            <p class="text-muted fs-15 ">This focuses on advanced machine learning topics using various platforms where you will get hands-on experience optimizing, deploying, and scaling ML models.</p>
+                        <div class="col-lg-6">
+                            <a href="#" class="info-item d-block text-body mt-4 pt-2">
+                                <div class="p-4">
+                                    <div class="research avatar-sm bg-soft-danger text-center">
+                                        <i class="mdi mdi-file-tree fs-24 text-danger"></i>
+                                    </div>
+                                    <h6 class="mt-4">Data Structures and Algorithms 2020</h6>
+                                    <p class="text-muted fs-15">This is a rigorous course on the design and analysis of efficient algorithms and their associated data structures.</p>
+                                </div>
+                            </a>
                         </div>
-                    </a>
+                        <div class="col-lg-6">
+                            <a href="#" class="info-item d-block text-body mt-4 pt-2">
+                                <div class="p-4">
+                                    <div class="research avatar-sm bg-soft-warning text-center">
+                                        <i class="mdi mdi-memory fs-24 text-warning"></i>
+                                    </div>
+                                    <h6 class="mt-4">Introduction to Machine Learning 2020</h6>
+                                    <p class="text-muted fs-15 ">This program will constitute a non-technical introduction to Machine Learning (ML), with particular emphasis on their current applications in different fields</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="#" class="info-item d-block text-body mt-4 pt-2">
+                                <div class="p-4">
+                                    <div class="research avatar-sm bg-soft-success text-center">
+                                        <i class="mdi mdi-memory fs-24 text-success"></i>
+                                    </div>
+                                    <h6 class="mt-4">Advanced Machine Learning 2020</h6>
+                                    <p class="text-muted fs-15 ">This focuses on advanced machine learning topics using various platforms where you will get hands-on experience optimizing, deploying, and scaling ML models.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
 

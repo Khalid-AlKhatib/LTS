@@ -1,4 +1,17 @@
 .teaching {
+    .nav-pills {
+        .nav-link {
+            padding: 8px 24px;
+            color: $primary;
+            font-size: 18px;
+            
+            &.active {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+    
     .info-item {
         border-radius: 20px;
         background-color: $white;

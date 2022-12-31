@@ -1,3 +1,18 @@
+.members {
+    .nav-pills {
+        .nav-link {
+            padding: 8px 24px;
+            color: $primary;
+            font-size: 18px;
+            
+            &.active {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+}
+
 .members-group {
     &-title {
         span {

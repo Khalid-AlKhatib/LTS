@@ -4,7 +4,7 @@
 
 
 .home {
-  min-height: 100vh;
+  min-height: clamp(768px, 100vh, 1080px);
   align-items: center;
   display: flex;
   // background-color: $muted-light;
