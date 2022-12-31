@@ -1985,6 +1985,39 @@ body[data-layout-mode=dark] .home-6 .bottom-item .video-button i {
   width: 100%;
   aspect-ratio: 1/1;
 }
+.member-content a {
+  color: #2fb4ae;
+}
+
+.teaching .info-item {
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all 0.5s ease-in-out;
+}
+.teaching .info-item .avatar-sm {
+  border-radius: 10px;
+}
+.teaching .info-item:hover {
+  transform: translateY(-12px);
+}
+
+.publications {
+  background-color: rgba(37, 88, 171, 0.05);
+}
+.publications a {
+  color: #2fb4ae;
+}
+.publications a:hover {
+  color: #248c87;
+}
+.publications .uk-hidden {
+  display: none;
+}
+.publications .publications-list .bib-entry {
+  margin-bottom: 2.8ex;
+  line-height: 1.8;
+}
 
 .about-me {
   background-color: #ffffff;
@@ -2132,124 +2165,23 @@ body[data-layout-mode=dark] .service .info-item {
   background-color: #303841 !important;
 }
 
-.testimonial {
+.open-positions {
   background-color: rgba(37, 88, 171, 0.05);
 }
-.testimonial .swiper-slide {
-  text-align: start;
-  font-size: 18px;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  opacity: 0.5;
-  background-color: transparent;
-  border-radius: 30px;
-  margin-top: 40px;
-}
-.testimonial .swiper-slide-active {
-  animation: color-change 6s linear infinite;
-  border: 3px solid;
-  opacity: 1;
-  box-shadow: 0px 3px 10px 0px rgba(28, 47, 80, 0.08);
-  margin-top: -30px;
-  transition: all 0.5s ease-out;
-}
-.testimonial .user-image {
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-35px, -35px);
-}
-.testimonial .swiper-pagination {
-  bottom: 15%;
-}
-.testimonial .section-bottom-shape-two {
-  position: absolute;
-  top: -45%;
-  right: 0;
-}
-.testimonial .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
-}
-.testimonial .swiper-pagination-bullet-active {
-  opacity: 1;
-  background: #000000 !important;
-  width: 12px;
-  height: 12px;
-  vertical-align: middle !important;
-}
 
-.shape-1 {
-  position: absolute;
-  left: 10%;
-  animation: translate 6s linear infinite;
+.open-position {
+  background-color: #2fb4ae;
+  color: #ffffff;
+  border-radius: 12px;
+  transition: all 0.2s ease-in-out;
 }
-
-.shape-2 {
-  position: absolute;
-  bottom: 10%;
-  right: 20%;
-  animation: translate 10s linear infinite;
+.open-position:hover {
+  transform: scale(1.025);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: #ffffff;
 }
-
-.shape-3 {
-  position: absolute;
-  animation: translatescale 4s linear infinite;
-  top: 10%;
-  right: 30%;
-}
-
-@keyframes translate {
-  0% {
-    transform: translatey(0px);
-  }
-  20% {
-    transform: translatey(50px);
-  }
-  60% {
-    transform: rotate(-180deg);
-  }
-  100% {
-    transform: translatey(0px);
-  }
-}
-@keyframes translatescale {
-  0% {
-    transform: translatey(0px);
-  }
-  20% {
-    transform: translatey(50px);
-  }
-  40% {
-    transform: scale(1.2);
-  }
-  80% {
-    transform: rotate(80deg);
-  }
-  100% {
-    transform: translatey(0px);
-  }
-}
-@media (max-width: 1320px) {
-  .testi-slider .section-bottom-shape-two {
-    top: -40%;
-  }
-}
-@media (max-width: 992px) {
-  .testi-slider .section-bottom-shape-two {
-    display: none;
-  }
-}
-body[data-layout-mode=dark] .testimonial {
-  background-color: #343f4b !important;
-  color: #ffffff !important;
-}
-body[data-layout-mode=dark] .testimonial .swiper-slide .user-info h5 {
-  color: #ffffff !important;
-}
-body[data-layout-mode=dark] .testimonial .swiper-pagination-bullet-active {
-  background: #ffffff !important;
+.open-position-content {
+  max-width: calc(100% - 20px);
 }
 
 .counter .counter-item {

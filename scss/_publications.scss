@@ -1,0 +1,20 @@
+.publications {
+    background-color: $muted-light;
+
+    a {
+        color: $primary;
+
+        &:hover {
+            color: darken($primary, 10%);
+        }
+    }
+
+    .uk-hidden {
+        display: none;
+    }
+
+    .publications-list .bib-entry {
+        margin-bottom: 2.8ex;
+        line-height: 1.8;
+    }
+}

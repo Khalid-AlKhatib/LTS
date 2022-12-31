@@ -1,0 +1,25 @@
+// 
+// open-positions.scss
+// 
+
+
+.open-positions {
+    background-color: $muted-light;
+}
+
+.open-position {
+    background-color: $primary;
+    color: $white;
+    border-radius: 12px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.025);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        color: $white;
+    }
+
+    &-content {
+        max-width: calc(100% - 20px);
+    }
+}
