@@ -1,0 +1,23 @@
+.members-group {
+    &-title {
+        span {
+            border-bottom: 5px solid $primary;
+        }
+        
+    }
+}
+
+.member {
+    background-color: $muted-light;
+    border-radius: 12px;
+
+    &-image {
+        border-radius: 12px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            aspect-ratio: 1/1;      
+        }
+    }
+}

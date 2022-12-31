@@ -6,6 +6,11 @@
 // responsive.scss
 //
 
+.container, .container-fluid {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 
 @media (min-width: 200px) and (max-width: 1024px) {
   .navbar-custom {
@@ -72,11 +77,17 @@
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .container {
-    max-width: 1140px !important;
+    max-width: 1280px !important;
   }
 }
+
+// @media (min-width: 1600px) {
+//   .container {
+//     max-width: 1440px !important;
+//   }
+// }
 
 @media (max-width: 768px) {
   .PageBackToWork-heading-itText {

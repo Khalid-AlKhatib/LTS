@@ -7,7 +7,7 @@
   min-height: 100vh;
   align-items: center;
   display: flex;
-  background-color: $muted-light;
+  // background-color: $muted-light;
 
   .typewrite>.wrap {
     border-right: 0.08em solid $dark;
@@ -18,18 +18,11 @@
       text-align: center;
       border-radius: 40px 40px 40px 0;
       margin: 0 6px;
-
-      i {
-        font-size: 24px;
-      }
-    }
-
-    .facebook,
-    .linkedin {
       border: 1px solid $blue;
       transition: all 0.3s ease-in-out;
 
       i {
+        font-size: 24px;
         color: $blue;
         transition: all 0.3s ease-in-out;
       }
@@ -45,63 +38,64 @@
     }
 
     .twitter {
-      border: 1px solid $info;
-      transition: all 0.3s ease-in-out;
+      border-color: $twitter-blue;
 
       i {
-        color: $info;
-        transition: all 0.3s ease-in-out;
+        color: $twitter-blue;
       }
 
       &:hover {
-        background-color: $info;
-        transition: all 0.3s ease-in-out;
-
-        i {
-          color: $white;
-        }
+        background-color: $twitter-blue;
       }
     }
 
-    .instagram {
-      border: 1px solid $pink;
-      transition: all 0.3s ease-in-out;
+    .linkedin {
+      border-color: $linkedin-blue;
 
       i {
-        color: $pink;
-        transition: all 0.3s ease-in-out;
+        color: $linkedin-blue;
       }
 
       &:hover {
-        background-color: $pink;
-        transition: all 0.3s ease-in-out;
-
-        i {
-          color: $white;
-        }
+        background-color: $linkedin-blue;
       }
     }
 
-    .pinterest {
-      border: 1px solid $danger;
-      transition: all 0.3s ease-in-out;
+    .linkedin {
+      border-color: $google-blue;
 
       i {
-        color: $danger;
-        transition: all 0.3s ease-in-out;
+        color: $google-blue;
       }
 
       &:hover {
-        background-color: $danger;
-        transition: all 0.3s ease-in-out;
-
-        i {
-          color: $white;
-        }
+        background-color: $google-blue;
       }
     }
 
+    .mastodon {
+      border-color: $mastodon-purple;
 
+      i {
+        color: $mastodon-purple;
+      }
+
+      &:hover {
+        background-color: $mastodon-purple;
+      }
+    }
+
+    .school {
+      border-color: $university-blue;
+
+      i {
+        color: $university-blue;
+      }
+
+      &:hover {
+        background-color: $university-blue;
+      }
+    }
   }
 
   .home-link {
@@ -673,6 +667,10 @@ body[data-layout-mode='dark'] {
     background-color: $body-dark-bg-light !important;
     .home-title{
       color: $white !important;
+
+      @media (min-width: 1200px) {
+        font-size: 2.25rem;
+      }
     }
     .read-link{
       color: $muted !important;

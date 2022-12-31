@@ -58,15 +58,15 @@
                     <li class="nav-item active">
                         <a href="#home" class="nav-link active">Home</a>
                     </li>
-                    <li class="nav-item dropdown dropdown-hover">
+                    <!-- <li class="nav-item dropdown dropdown-hover">
                         <a href="#aboutme" class="nav-link ">About</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item dropdown dropdown-hover">
                         <a href="#news" class="nav-link ">News</a>
                     </li>
 
                     <li class="nav-item dropdown dropdown-hover">
-                        <a href="#people" class="nav-link ">People</a>
+                        <a href="#members" class="nav-link ">Members</a>
                     </li>
                     <li class="nav-item">
                         <a href="#publications" class="nav-link">Publication</a>
@@ -77,9 +77,9 @@
                     <li class="nav-item">
                         <a href="#blog" class="nav-link">Open Positions</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a href="#contact" class="nav-link">Contact</a>
-                    </li>
+                    </li> -->
                 </ul>
                 <!--end navbar-nav-->
                 <!--<div class="ms-auto ps-2 ps-lg-0">
@@ -93,15 +93,15 @@
 
 
     <!-- home section -->
-    <section class="home" id="home" >
+    <section class="home" id="home">
         <!-- start container -->
-        <div class="container position-relative">
+        <div class="container-fluid position-relative">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="home-slider" id="home-slider">
                         <div class="item">
-                            <div class="row align-items-center">
-                                <div class="col-lg-6">
+                            <div class="row gy-5 align-items-center">
+                                <div class="col-lg-6 order-2 order-lg-1">
                                     <div class="content-item">
                                         <p class="text-warning fw-semibold mb-0">We work on</p>
                                         <div class="home-title mb-0 fw-bold h1">
@@ -112,21 +112,13 @@
                                         </div>
                                         <p class="mt-3 text-muted">Building simple and beautiful things for complex
                                             interfaces is what I enjoy most about my work. I am also interested in
-                                            crafting beautiful minimal products and exploring new worlds. Building simple and beautiful things for complex interfaces is what I enjoy most about my work. I am also interested in
+                                            crafting beautiful minimal products and exploring new worlds. Building
+                                            simple and beautiful things for complex interfaces is what I enjoy most
+                                            about my work. I am also interested in
                                             crafting beautiful minimal products and exploring new worlds.</p>
 
                                         <div class="icon-item mt-4">
                                             <div class="d-flex">
-                                                <a href="#">
-                                                    <div class="social-icon facebook avatar-sm">
-                                                        <i class="mdi mdi-facebook"></i>
-                                                    </div>
-                                                </a>
-                                                <a href="#">
-                                                    <div class="social-icon instagram avatar-sm">
-                                                        <i class="mdi mdi-instagram"></i>
-                                                    </div>
-                                                </a>
                                                 <a href="#">
                                                     <div class="social-icon twitter avatar-sm">
                                                         <i class="mdi mdi-twitter"></i>
@@ -138,22 +130,62 @@
                                                     </div>
                                                 </a>
                                                 <a href="#">
-                                                    <div class="social-icon pinterest avatar-sm">
-                                                        <i class="mdi mdi-pinterest"></i>
-                                                    </div>
-													 </a>
-												<a href="#">
                                                     <div class="social-icon google avatar-sm">
                                                         <i class="mdi mdi-google"></i>
                                                     </div>
-													 </a>
-													
-                                               
+                                                </a>
+                                                <a href="#">
+                                                    <div class="social-icon mastodon avatar-sm">
+                                                        <i class="mdi mdi-mastodon"></i>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="social-icon school avatar-sm">
+                                                        <i class="mdi mdi-school"></i>
+                                                    </div>
+                                                </a>
                                             </div>
 
                                         </div>
 
-                                        <div class="home-link d-inline-block mt-5">
+                                        <div class="contact-details mt-4">
+                                            <div class="info-content">
+                                                <div class="d-flex">
+                                                    <div class="icon">
+                                                        <i class="mdi mdi-home-outline fs-24 text-primary"></i>
+                                                    </div>
+                                                    <div class="icon-content d-flex align-items-center ms-3">
+                                                        <p class="mb-0 fs-15">744 New York Ave, Brooklyn, Kings, New
+                                                            York 10224</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="info-content">
+                                                <div class="d-flex">
+                                                    <div class="icon">
+                                                        <i class="mdi mdi-phone-outline fs-24 text-primary"></i>
+                                                    </div>
+                                                    <div class="icon-content d-flex align-items-center ms-3">
+                                                        <p class="mb-0 fs-15">(+642) 245 356 432</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="info-content">
+                                                <div class="d-flex">
+                                                    <div class="icon">
+                                                        <i class="mdi mdi-email-outline fs-24 text-primary"></i>
+                                                    </div>
+                                                    <div class="icon-content d-flex align-items-center ms-3">
+                                                        <p class="mb-0 fs-15">hellosuppot@gmail.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-link d-inline-block mt-4">
                                             <div class="d-flex align-items-center">
                                                 <div class="btn-link ">
                                                     <a href="" class="text-dark h6">
@@ -170,9 +202,9 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 order-1 order-lg-2">
                                     <div class="my-image">
-                                        <img src="images/home/home.png" alt="" class="img-fluid">
+                                        <img src="images/home/home.jpg" alt="" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
@@ -186,371 +218,415 @@
     </section>
     <!-- end home section -->
 
-
-
-    <!-- about-me section -->
-    <section class="section about-me" id="aboutme">
-        <!-- container -->
-        <div class="container">
-            <div class="about-box">
-                <div class="row">
-
-                    <div class="col-lg-6 position-relative">
-                        <div class="image-round"></div>
-                        <div class="about-image p-4 pb-0">
-                            <img src="images/about.png" alt="" class="img-fluid">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="about-item p-5">
-                            <h2 class="display-5 fw-semibold">About Me</h2>
-                            <p class="text-muted fs-14">It is a long established fact that a reader will be distracted
-                                by the readable content of a page when looking at its layout. The point of using normal
-                                distribution of letters, as opposed to using 'Content here, content here', making it
-                                look like readable English.. It is a long established fact that a reader will be distracted
-                                by the readable content of a page when looking at its layout. The point of using normal
-                                distribution of letters, as opposed to using 'Content here, content here', making it
-                                look like readable English..</p>
-
-                            <ul class="nav nav-pills mb-3 mt-4 pt-2" id="pills-tab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                                        aria-selected="true">Skills</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-profile" type="button" role="tab"
-                                        aria-controls="pills-profile" aria-selected="false">Experience</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-contact" type="button" role="tab"
-                                        aria-controls="pills-contact" aria-selected="false">Education</button>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                                    aria-labelledby="pills-home-tab">
-
-                                    <div class="skill-item mt-4 pt-2">
-                                        <div class="d-flex justify-content-between">
-                                            <h6>Development</h6>
-                                            <h6>65%</h6>
-                                        </div>
-                                        <div class="progress" style="height: 5px;">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="65"
-                                                aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="skill-item mt-4 pt-2">
-                                        <div class="d-flex justify-content-between">
-                                            <h6>Design</h6>
-                                            <h6>95%</h6>
-                                        </div>
-                                        <div class="progress" style="height: 5px;">
-                                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="95"
-                                                aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="skill-item mt-4 pt-2">
-                                        <div class="d-flex justify-content-between">
-                                            <h6>Branding</h6>
-                                            <h6>80%</h6>
-                                        </div>
-                                        <div class="progress" style="height: 5px;">
-                                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80"
-                                                aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                                    aria-labelledby="pills-profile-tab">
-
-                                    <div class="experience">
-                                        <div class="row position-relative">
-                                            <div class="col-2">
-                                                <div class="border-left"></div>
-                                            </div>
-                                            <div class="col-10">
-                                                <div class="mt-4 pt-2">
-                                                    <h5>Developer</h5>
-                                                    <p class="text-muted fs-15">2000-2004 (4 year Experience)</p>
-                                                    <p class="text-muted fs-15">There are many variations of passages of
-                                                        Lorem Ipsum available, but the majority have fered altation in
-                                                        some form, by injmour, or randomised words which don't look even
-                                                        slightlievable. </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                                    aria-labelledby="pills-contact-tab">
-                                    <div class="experience">
-                                        <div class="row position-relative">
-                                            <div class="col-2">
-                                                <div class="border-left"></div>
-                                            </div>
-                                            <div class="col-10">
-                                                <div class="mt-4 pt-2">
-                                                    <h5>Basic Computer Application</h5>
-                                                    <p class="text-muted fs-15 mb-0">1996-1998 (3 year)</p>
-                                                    <p class="text-muted fs-15 mb-0">There are many variations of
-                                                        passages of Lorem Ipsum available.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row position-relative">
-                                            <div class="col-2">
-                                                <div class="border-left"></div>
-                                            </div>
-                                            <div class="col-10">
-                                                <div class="mt-4 pt-2">
-                                                    <h5>Mastar Computer Application</h5>
-                                                    <p class="text-muted fs-15 mb-0">1999-2000 (2 year)</p>
-                                                    <p class="text-muted fs-15">The majority have fered altation in some
-                                                        form, by injmour, or randomised words which don't look even
-                                                        slightlievable. </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-        <!-- end container -->
-    </section>
-    <!-- end about-me -->
-
-
     <!-- start news -->
     <section class="section news" id="news">
         <!-- start container -->
- 
-     <div class="container">
-	 
-<div id="news-container">
-  <select id="year-select">
-    <option value="2022">2022</option>
-    <option value="2021">2021</option>
-    <option value="2020">2020</option>
-  </select>
-  <div id="news-items">
-    <!-- news items for 2022 -->
-    <div class="news-item" data-year="2022">
-      <h2>News Item 1</h2>
-      <p>Description of News Item 1</p>
-    </div>
-    <div class="news-item" data-year="2022">
-      <h2>News Item 2</h2>
-      <p>Description of News Item 2</p>
-    </div>
-    <!-- news items for 2021 -->
-    <div class="news-item" data-year="2021">
-      <h2>News Item 3</h2>
-      <p>Description of News Item 3</p>
-    </div>
-	<div class="news-item" data-year="2021">
-      <h2>News Item 3</h2>
-      <p>Des
-	  <div class="news-item" data-year="2021">
-      <h2>News Item 3</h2>
-      <p>Description of News Item 3</p>
-    </div>
-	<div class="news-item" data-year="2021">
-      <h2>News Item 3</h2>
-      <p>Description of News Item 3</p>
-    </div>
-	<div class="news-item" data-year="2021">
-      <h2>News Item 3</h2>
-      <p>Description of News Item 3</p>
-    </div>cription of News Item 3</p>
-    </div>
-	<div class="news-item" data-year="2021">
-      <h2>News Item 3</h2>
-      <p>Description of News Item 3</p>
-    </div>
-    <!-- etc. -->
-  </div>
-  <button id="next-button" style="display: none;">Next</button>
-</div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-5">
+                        <h6 class="mb-0 text-muted fs-15">News</h6>
+                        <h2>Get Updated</h2>
+                        <p class="para-width text-muted mb-0 fs-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a fermentum enim.</p>
+                    </div>
+                </div>
+            </div>
 
-
-
-
-<style>
-#news-container {
-  width: 1000px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-#year-select {
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-}
-
-#news-items {
-  margin: 20px 0;
-}
-
-#next-button {
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  background-color: #4CAF50;
-  color: white;
-  cursor: pointer;
-}
-
-</style>
-
-<script>
-const yearSelect = document.getElementById("year-select");
-const newsItems = document.getElementById("news-items");
-const nextButton = document.getElementById("next-button");
-
-let currentYear = 2022;
-let currentPage = 1;
-let totalPages = 1;
-
-yearSelect.addEventListener("change", () => {
-  currentYear = yearSelect.value;
-  currentPage = 1;
-  updateNews();
-});
-
-nextButton.addEventListener("click", () => {
-  currentPage++;
-  updateNews();
-});
-
-function updateNews() {
-  // hide all news items
-  const newsItemElements = document.querySelectorAll(".news-item");
-  for (const element of newsItemElements) {
-    element.style.display = "none";
-  }
-  
-  // show news items for the selected year
-  let page = 1;
-  let pageCount = 0;
-  for (const element of newsItemElements) {
-    if (element.dataset.year == currentYear) {
-      if (page == currentPage) {
-        element.style.display = "block";
-        pageCount++;
-      }
-      if (pageCount == 5) {
-        page++;
-        pageCount = 0;
-      }
-    }
-  }
-  
-  // update the total pages based on the number of news items for the selected year
-  totalPages = Math.ceil(page / 5);
-  
-  // show or hide the next button based on the current page and total pages
-  if (currentPage < totalPages) {
-    nextButton.style.display = "block";
-  } else {
-    nextButton.style.display = "none";
-  }
-}
-
-// initially show the news items for the current year
-updateNews();
-
-
-</script>
-
+            <ul class="nav nav-pills justify-content-center" id="newsTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="news2022-tab" data-bs-toggle="tab" data-bs-target="#news2022"
+                        type="button" role="tab" aria-controls="news2022" aria-selected="true">2022</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="news2021-tab" data-bs-toggle="tab" data-bs-target="#news2021"
+                        type="button" role="tab" aria-controls="news2021" aria-selected="false">2021</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="news2020-tab" data-bs-toggle="tab" data-bs-target="#news2020"
+                        type="button" role="tab" aria-controls="news2020" aria-selected="false">2020</button>
+                </li>
+            </ul>
+            <div class="tab-content mt-5" id="newsTabContent">
+                <div class="tab-pane fade show active" id="news2022" role="tabpanel" aria-labelledby="news2022-tab">
+                    <div class="row gy-4">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <a href="#" class="news-card">
+                                <div class="news-card-icon"><img src="images/news/img-1.png"></div>
+                                <p class="news-card-date text-muted fs-12 m-0">26 December 2022</p>
+                                <h5 class="news-card-title">News Item 1</h5>
+                                <p class="news-card-description text-muted ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a fermentum enim.</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <a href="#" class="news-card">
+                                <div class="news-card-icon"><img src="images/news/img-2.png"></div>
+                                <p class="news-card-date text-muted fs-12 m-0">26 December 2022</p>
+                                <h5 class="news-card-title">News Item 2</h5>
+                                <p class="news-card-description text-muted ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a fermentum enim.</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <a href="#" class="news-card">
+                                <div class="news-card-icon"><img src="images/news/img-3.png"></div>
+                                <p class="news-card-date text-muted fs-12 m-0">26 December 2022</p>
+                                <h5 class="news-card-title">News Item 3</h5>
+                                <p class="news-card-description text-muted ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a fermentum enim.</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <a href="#" class="news-card">
+                                <div class="news-card-icon"><img src="images/news/img-2.png"></div>
+                                <p class="news-card-date text-muted fs-12 m-0">26 December 2022</p>
+                                <h5 class="news-card-title">News Item 4</h5>
+                                <p class="news-card-description text-muted ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a fermentum enim.</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <a href="#" class="news-card">
+                                <div class="news-card-icon"><img src="images/news/img-3.png"></div>
+                                <p class="news-card-date text-muted fs-12 m-0">26 December 2022</p>
+                                <h5 class="news-card-title">News Item 5</h5>
+                                <p class="news-card-description text-muted ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a fermentum enim.</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <a href="#" class="news-card">
+                                <div class="news-card-icon"><img src="images/news/img-1.png"></div>
+                                <p class="news-card-date text-muted fs-12 m-0">26 December 2022</p>
+                                <h5 class="news-card-title">News Item 6</h5>
+                                <p class="news-card-description text-muted ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a fermentum enim.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="news2021" role="tabpanel" aria-labelledby="news2021-tab">
+                    <div class="row gy-4">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <a href="#" class="news-card">
+                                <div class="news-card-icon"><img src="images/news/img-1.png"></div>
+                                <p class="news-card-date text-muted fs-12 m-0">26 December 2021</p>
+                                <h5 class="news-card-title">News Item 7</h5>
+                                <p class="news-card-description text-muted ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a fermentum enim.</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <a href="#" class="news-card">
+                                <div class="news-card-icon"><img src="images/news/img-2.png"></div>
+                                <p class="news-card-date text-muted fs-12 m-0">26 December 2021</p>
+                                <h5 class="news-card-title">News Item 8</h5>
+                                <p class="news-card-description text-muted ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a fermentum enim.</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <a href="#" class="news-card">
+                                <div class="news-card-icon"><img src="images/news/img-3.png"></div>
+                                <p class="news-card-date text-muted fs-12 m-0">26 December 2021</p>
+                                <h5 class="news-card-title">News Item 9</h5>
+                                <p class="news-card-description text-muted ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a fermentum enim.</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <a href="#" class="news-card">
+                                <div class="news-card-icon"><img src="images/news/img-2.png"></div>
+                                <p class="news-card-date text-muted fs-12 m-0">26 December 2021</p>
+                                <h5 class="news-card-title">News Item 10</h5>
+                                <p class="news-card-description text-muted ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a fermentum enim.</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <a href="#" class="news-card">
+                                <div class="news-card-icon"><img src="images/news/img-3.png"></div>
+                                <p class="news-card-date text-muted fs-12 m-0">26 December 2021</p>
+                                <h5 class="news-card-title">News Item 11</h5>
+                                <p class="news-card-description text-muted ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a fermentum enim.</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <a href="#" class="news-card">
+                                <div class="news-card-icon"><img src="images/news/img-1.png"></div>
+                                <p class="news-card-date text-muted fs-12 m-0">26 December 2021</p>
+                                <h5 class="news-card-title">News Item 12</h5>
+                                <p class="news-card-description text-muted ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a fermentum enim.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="news2020" role="tabpanel" aria-labelledby="news2020-tab">
+                    <div class="row gy-4">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <a href="#" class="news-card">
+                                <div class="news-card-icon"><img src="images/news/img-1.png"></div>
+                                <p class="news-card-date text-muted fs-12 m-0">26 December 2020</p>
+                                <h5 class="news-card-title">News Item 13</h5>
+                                <p class="news-card-description text-muted ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a fermentum enim.</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <a href="#" class="news-card">
+                                <div class="news-card-icon"><img src="images/news/img-2.png"></div>
+                                <p class="news-card-date text-muted fs-12 m-0">26 December 2020</p>
+                                <h5 class="news-card-title">News Item 14</h5>
+                                <p class="news-card-description text-muted ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a fermentum enim.</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <a href="#" class="news-card">
+                                <div class="news-card-icon"><img src="images/news/img-3.png"></div>
+                                <p class="news-card-date text-muted fs-12 m-0">26 December 2020</p>
+                                <h5 class="news-card-title">News Item 15</h5>
+                                <p class="news-card-description text-muted ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a fermentum enim.</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <a href="#" class="news-card">
+                                <div class="news-card-icon"><img src="images/news/img-2.png"></div>
+                                <p class="news-card-date text-muted fs-12 m-0">26 December 2020</p>
+                                <h5 class="news-card-title">News Item 16</h5>
+                                <p class="news-card-description text-muted ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a fermentum enim.</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <a href="#" class="news-card">
+                                <div class="news-card-icon"><img src="images/news/img-3.png"></div>
+                                <p class="news-card-date text-muted fs-12 m-0">26 December 2020</p>
+                                <h5 class="news-card-title">News Item 17</h5>
+                                <p class="news-card-description text-muted ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a fermentum enim.</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <a href="#" class="news-card">
+                                <div class="news-card-icon"><img src="images/news/img-1.png"></div>
+                                <p class="news-card-date text-muted fs-12 m-0">26 December 2020</p>
+                                <h5 class="news-card-title">News Item 18</h5>
+                                <p class="news-card-description text-muted ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a fermentum enim.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- end container -->
     </section>
     <!-- end service -->
 
     <!-- start counter -->
-    <section class="section people" id="people">
+    <section class="section people" id="members">
         <!-- start container -->
         <div class="container">
 
-<div class="research-group-section">
-  <h2>Members</h2>
-  <div class="member">
-    <img src="member1.jpg" alt="Member 1">
-    <h3>Member 1</h3>
-    <p>Research Interest: <span>Topic 1</span></p>
-    <p>Email: <a href="mailto:member1@example.com">member1@example.com</a></p>
-    <hr>
-  </div>
-  <div class="member">
-    <img src="member2.jpg" alt="Member 2">
-    <h3>Member 2</h3>
-    <p>Research Interest: <span>Topic 2</span></p>
-    <p>Email: <a href="mailto:member2@example.com">member2@example.com</a></p>
-    <hr>
-  </div>
-  <!-- Add additional member elements here -->
-</div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-5">
+                        <h6 class="mb-0 text-muted fs-15">Members</h6>
+                        <h2>Meet The Team</h2>
+                        <p class="para-width text-muted mb-0 fs-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a fermentum enim.</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="row justify-content-center">
+                <div class="members-group col-12 col-lg-10">
+                    <h3 class="members-group-title text-center mb-4"><span>PhDs</span></h3>
+                    <div class="member mt-4 p-4">
+                        <div class="row gy-4 gx-4 gx-xl-5">
+                            <div class="member-left-col col-12 col-md-4 col-xl-3">
+                                <div class="member-image">
+                                    <img src="images/members/img1.png" alt="Member 1">
+                                </div>
+                            </div>
+                            <div class="member-right-col col-12 col-md-8 col-xl-9">
+                                <div class="member-content d-flex flex-column h-100">
+                                    <div>
+                                        <h4 class="member-name mb-4">Member 1</h4>
+                                        <div class="row mb-4">
+                                            <div class="col-12 col-md-6">
+                                                <p class="member-interest mb-2"><i class="mdi mdi-test-tube text-primary"></i> Research Interest: <span>Topic 1</span></p>
+                                                <p class="member-phone mb-2"><i class="mdi mdi-phone text-primary"></i> Phone: <a href="tel: +49 511 762 5301">+49 511 762 5301</a></p>
+                                                <p class="member-email mb-2"><i class="mdi mdi-email text-primary"></i> Email: <a href="mailto:member1@example.com">member1@example.com</a></p>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <p class="member-address mb-2"><i class="mdi mdi-map-marker text-primary"></i> Address: <span>Appelstraße 9a 30167 Hannover</span></p>
+                                                <p class="member-building mb-2"><i class="mdi mdi-office-building text-primary"></i> Building: <span>3408</span></p>
+                                                <p class="member-roommb-2"><i class="mdi mdi-door text-primary"></i>  Room: <span>1316</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-auto text-right">
+                                        <a href="" class="text-primary border-2 border-primary border-bottom">View Profile <img src="images/home/right-arrow-primary.png" alt="" class="img-fluid mb-1 ms-2"></a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member mt-4 p-4">
+                        <div class="row gy-4 gx-4 gx-xl-5">
+                            <div class="member-left-col col-12 col-md-4 col-xl-3">
+                                <div class="member-image">
+                                    <img src="images/members/img2.png" alt="Member 1">
+                                </div>
+                            </div>
+                            <div class="member-right-col col-12 col-md-8 col-xl-9">
+                                <div class="member-content d-flex flex-column h-100">
+                                    <div>
+                                        <h4 class="member-name mb-4">Member 2</h4>
+                                        <div class="row mb-4">
+                                            <div class="col-12 col-md-6">
+                                                <p class="member-interest mb-2"><i class="mdi mdi-test-tube text-primary"></i> Research Interest: <span>Topic 1</span></p>
+                                                <p class="member-phone mb-2"><i class="mdi mdi-phone text-primary"></i> Phone: <a href="tel: +49 511 762 5301">+49 511 762 5301</a></p>
+                                                <p class="member-email mb-2"><i class="mdi mdi-email text-primary"></i> Email: <a href="mailto:member1@example.com">member1@example.com</a></p>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <p class="member-address mb-2"><i class="mdi mdi-map-marker text-primary"></i> Address: <span>Appelstraße 9a 30167 Hannover</span></p>
+                                                <p class="member-building mb-2"><i class="mdi mdi-office-building text-primary"></i> Building: <span>3408</span></p>
+                                                <p class="member-roommb-2"><i class="mdi mdi-door text-primary"></i>  Room: <span>1316</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-auto text-right">
+                                        <a href="" class="text-primary border-2 border-primary border-bottom">View Profile <img src="images/home/right-arrow-primary.png" alt="" class="img-fluid mb-1 ms-2"></a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member mt-4 p-4">
+                        <div class="row gy-4 gx-4 gx-xl-5">
+                            <div class="member-left-col col-12 col-md-4 col-xl-3">
+                                <div class="member-image">
+                                    <img src="images/members/img3.png" alt="Member 1">
+                                </div>
+                            </div>
+                            <div class="member-right-col col-12 col-md-8 col-xl-9">
+                                <div class="member-content d-flex flex-column h-100">
+                                    <div>
+                                        <h4 class="member-name mb-4">Member 3</h4>
+                                        <div class="row mb-4">
+                                            <div class="col-12 col-md-6">
+                                                <p class="member-interest mb-2"><i class="mdi mdi-test-tube text-primary"></i> Research Interest: <span>Topic 1</span></p>
+                                                <p class="member-phone mb-2"><i class="mdi mdi-phone text-primary"></i> Phone: <a href="tel: +49 511 762 5301">+49 511 762 5301</a></p>
+                                                <p class="member-email mb-2"><i class="mdi mdi-email text-primary"></i> Email: <a href="mailto:member1@example.com">member1@example.com</a></p>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <p class="member-address mb-2"><i class="mdi mdi-map-marker text-primary"></i> Address: <span>Appelstraße 9a 30167 Hannover</span></p>
+                                                <p class="member-building mb-2"><i class="mdi mdi-office-building text-primary"></i> Building: <span>3408</span></p>
+                                                <p class="member-roommb-2"><i class="mdi mdi-door text-primary"></i>  Room: <span>1316</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-auto text-right">
+                                        <a href="" class="text-primary border-2 border-primary border-bottom">View Profile <img src="images/home/right-arrow-primary.png" alt="" class="img-fluid mb-1 ms-2"></a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-<style>
-.research-group-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-}
-
-.member {
-  width: 1000px;
-  margin: 20px;
-  text-align: left;
-}
-
-.member img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.member h3 {
-  margin-top: 10px;
-}
-
-.member p {
-  margin: 5px 0;
-}
-
-.member span {
-  font-weight: bold;
-}
-
-.member hr {
-  margin: 20px 0;
-  width: 100%;
-  border: 1px solid #ccc;
-}
-
-</style>
-
+            <div class="row justify-content-center">
+                <div class="members-group col-12 col-lg-10 mt-5">
+                    <h3 class="members-group-title text-center mb-4"><span>Masters</span></h3>
+                    <div class="member mt-4 p-4">
+                        <div class="row gy-4 gx-4 gx-xl-5">
+                            <div class="member-left-col col-12 col-md-4 col-xl-3">
+                                <div class="member-image">
+                                    <img src="images/members/img1.png" alt="Member 1">
+                                </div>
+                            </div>
+                            <div class="member-right-col col-12 col-md-8 col-xl-9">
+                                <div class="member-content d-flex flex-column h-100">
+                                    <div>
+                                        <h4 class="member-name mb-4">Member 1</h4>
+                                        <div class="row mb-4">
+                                            <div class="col-12 col-md-6">
+                                                <p class="member-interest mb-2"><i class="mdi mdi-test-tube text-primary"></i> Research Interest: <span>Topic 1</span></p>
+                                                <p class="member-phone mb-2"><i class="mdi mdi-phone text-primary"></i> Phone: <a href="tel: +49 511 762 5301">+49 511 762 5301</a></p>
+                                                <p class="member-email mb-2"><i class="mdi mdi-email text-primary"></i> Email: <a href="mailto:member1@example.com">member1@example.com</a></p>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <p class="member-address mb-2"><i class="mdi mdi-map-marker text-primary"></i> Address: <span>Appelstraße 9a 30167 Hannover</span></p>
+                                                <p class="member-building mb-2"><i class="mdi mdi-office-building text-primary"></i> Building: <span>3408</span></p>
+                                                <p class="member-roommb-2"><i class="mdi mdi-door text-primary"></i>  Room: <span>1316</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-auto text-right">
+                                        <a href="" class="text-primary border-2 border-primary border-bottom">View Profile <img src="images/home/right-arrow-primary.png" alt="" class="img-fluid mb-1 ms-2"></a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member mt-4 p-4">
+                        <div class="row gy-4 gx-4 gx-xl-5">
+                            <div class="member-left-col col-12 col-md-4 col-xl-3">
+                                <div class="member-image">
+                                    <img src="images/members/img2.png" alt="Member 1">
+                                </div>
+                            </div>
+                            <div class="member-right-col col-12 col-md-8 col-xl-9">
+                                <div class="member-content d-flex flex-column h-100">
+                                    <div>
+                                        <h4 class="member-name mb-4">Member 2</h4>
+                                        <div class="row mb-4">
+                                            <div class="col-12 col-md-6">
+                                                <p class="member-interest mb-2"><i class="mdi mdi-test-tube text-primary"></i> Research Interest: <span>Topic 1</span></p>
+                                                <p class="member-phone mb-2"><i class="mdi mdi-phone text-primary"></i> Phone: <a href="tel: +49 511 762 5301">+49 511 762 5301</a></p>
+                                                <p class="member-email mb-2"><i class="mdi mdi-email text-primary"></i> Email: <a href="mailto:member1@example.com">member1@example.com</a></p>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <p class="member-address mb-2"><i class="mdi mdi-map-marker text-primary"></i> Address: <span>Appelstraße 9a 30167 Hannover</span></p>
+                                                <p class="member-building mb-2"><i class="mdi mdi-office-building text-primary"></i> Building: <span>3408</span></p>
+                                                <p class="member-roommb-2"><i class="mdi mdi-door text-primary"></i>  Room: <span>1316</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-auto text-right">
+                                        <a href="" class="text-primary border-2 border-primary border-bottom">View Profile <img src="images/home/right-arrow-primary.png" alt="" class="img-fluid mb-1 ms-2"></a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member mt-4 p-4">
+                        <div class="row gy-4 gx-4 gx-xl-5">
+                            <div class="member-left-col col-12 col-md-4 col-xl-3">
+                                <div class="member-image">
+                                    <img src="images/members/img3.png" alt="Member 1">
+                                </div>
+                            </div>
+                            <div class="member-right-col col-12 col-md-8 col-xl-9">
+                                <div class="member-content d-flex flex-column h-100">
+                                    <div>
+                                        <h4 class="member-name mb-4">Member 3</h4>
+                                        <div class="row mb-4">
+                                            <div class="col-12 col-md-6">
+                                                <p class="member-interest mb-2"><i class="mdi mdi-test-tube text-primary"></i> Research Interest: <span>Topic 1</span></p>
+                                                <p class="member-phone mb-2"><i class="mdi mdi-phone text-primary"></i> Phone: <a href="tel: +49 511 762 5301">+49 511 762 5301</a></p>
+                                                <p class="member-email mb-2"><i class="mdi mdi-email text-primary"></i> Email: <a href="mailto:member1@example.com">member1@example.com</a></p>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <p class="member-address mb-2"><i class="mdi mdi-map-marker text-primary"></i> Address: <span>Appelstraße 9a 30167 Hannover</span></p>
+                                                <p class="member-building mb-2"><i class="mdi mdi-office-building text-primary"></i> Building: <span>3408</span></p>
+                                                <p class="member-roommb-2"><i class="mdi mdi-door text-primary"></i>  Room: <span>1316</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-auto text-right">
+                                        <a href="" class="text-primary border-2 border-primary border-bottom">View Profile <img src="images/home/right-arrow-primary.png" alt="" class="img-fluid mb-1 ms-2"></a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- end container -->
@@ -563,47 +639,48 @@ updateNews();
     <section class="section teaching" id="teaching">
         <!-- start container -->
         <div class="container">
-         <section id="teaching">
-  <h2>Teaching</h2>
-  <p>As a research group, we are committed to educating the next generation of scientists and engineers. Our members have taught a variety of courses, including:</p>
-  <ul>
-    <li>Introduction to Computer Science</li>
-    <li>Data Structures and Algorithms</li>
-    <li>Introduction to Machine Learning</li>
-    <li>Advanced Machine Learning</li>
-  </ul>
-</section>
-  <style>
-  #teaching {
-  background-color: #f5f5f5;
-  padding: 20px;
-}
+            <section id="teaching">
+                <h2>Teaching</h2>
+                <p>As a research group, we are committed to educating the next generation of scientists and engineers.
+                    Our members have taught a variety of courses, including:</p>
+                <ul>
+                    <li>Introduction to Computer Science</li>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Introduction to Machine Learning</li>
+                    <li>Advanced Machine Learning</li>
+                </ul>
+            </section>
+            <style>
+                #teaching {
+                    background-color: #f5f5f5;
+                    padding: 20px;
+                }
 
-#teaching h2 {
-  color: #333;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
+                #teaching h2 {
+                    color: #333;
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
 
-#teaching p {
-  color: #666;
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
+                #teaching p {
+                    color: #666;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    margin-bottom: 20px;
+                }
 
-#teaching ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+                #teaching ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                }
 
-#teaching li {
-  color: #999;
-  font-size: 14px;
-  margin-bottom: 10px;
-}  
-  </style>
+                #teaching li {
+                    color: #999;
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+            </style>
         </div>
         <!-- end container -->
     </section>
@@ -615,46 +692,38 @@ updateNews();
 
         <!-- start container -->
         <div class="container">
-		<div class="text-left mb-5">
-                        <h6 class="mb-0 text-muted fs-15">Selected Peer-reviewed Publications</h6>
-                        <h2>Publications</h2>
-                        
-                    </div>
-<div id="publications" class="iknow_tm_main_section">
-				<div class="iknow_tm_publications">
-					
-					<div id="publications-list"></div>
-  
-					<script src="https://assets.webis.de/js/filter.js"></script>
-					<script src="https://assets.webis.de/js/selection.js"></script>
-					<script>
-					includeBibentries(document.getElementById("publications-list"), "author:khalid+al-khatib");
-					
-					</script>
-					
-					<style type="text/css">
-					  .uk-hidden {
-						display: none;
-					}
-					
-					.publications-list .bib-entry {
-						margin-bottom: 2.8ex;
-						line-height: 1.8;
-					}
-					</style>
-							 
-				</div>
-          
-        </div>
-        <!-- end container -->
+            <div class="text-left mb-5">
+                <h6 class="mb-0 text-muted fs-15">Selected Peer-reviewed Publications</h6>
+                <h2>Publications</h2>
 
-        <div class="shape-2">
-            <img src="images/testi/shape-2.png" alt="" class="img-fluid">
-        </div>
+            </div>
+            <div id="publications" class="iknow_tm_main_section">
+                <div class="iknow_tm_publications">
 
-        <div class="shape-3 ">
-            <img src="images/testi/shape-3.png" alt="" class="img-fluid">
-        </div>
+                    <div id="publications-list"></div>
+
+                    <script src="https://assets.webis.de/js/filter.js"></script>
+                    <script src="https://assets.webis.de/js/selection.js"></script>
+                    <script>
+                        includeBibentries(document.getElementById("publications-list"), "author:khalid+al-khatib");
+
+                    </script>
+
+                    <style type="text/css">
+                        .uk-hidden {
+                            display: none;
+                        }
+
+                        .publications-list .bib-entry {
+                            margin-bottom: 2.8ex;
+                            line-height: 1.8;
+                        }
+                    </style>
+
+                </div>
+
+            </div>
+            <!-- end container -->
 
     </section>
     <!-- end pricing -->
@@ -662,9 +731,6 @@ updateNews();
 
     <!-- start testimonial -->
     <section class="section testimonial" id="testi">
-        <div class="shape-1">
-            <img src="images/testi/shape.png" alt="" class="img-fluid">
-        </div>
         <!-- start container -->
         <div class="container">
             <div class="row justify-content-center">
@@ -787,14 +853,6 @@ updateNews();
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-
-        <div class="shape-2">
-            <img src="images/testi/shape-2.png" alt="" class="img-fluid">
-        </div>
-
-        <div class="shape-3">
-            <img src="images/testi/shape-3.png" alt="" class="img-fluid">
-        </div>
         <!-- end container -->
     </section>
     <!-- end testimonial -->
@@ -829,7 +887,9 @@ updateNews();
                         </div>
                         <div class="blog-content mt-5">
                             <!-- <p class="text-muted fw-semibold mb-2">May 25, 2021</p> -->
-                            <a href="" ><h5>We makes UI/UX design very easy for you.</h5></a>
+                            <a href="">
+                                <h5>We makes UI/UX design very easy for you.</h5>
+                            </a>
                             <p class="fs-15 text-muted">He nicked it tickety boo harry the cras bargy chap mush spiffing
                                 spend a penny.</p>
                             <a href="" class="text-dark fw-semibold">Learn more <i
@@ -848,7 +908,9 @@ updateNews();
                         </div>
                         <div class="blog-content mt-5">
                             <!-- <p class="text-muted fw-semibold mb-2">May 25, 2021</p> -->
-                            <a href=""><h5>Current world design trends know easily.</h5></a>
+                            <a href="">
+                                <h5>Current world design trends know easily.</h5>
+                            </a>
                             <p class="fs-15 text-muted">He nicked it tickety boo harry the cras bargy chap mush spiffing
                                 spend a penny.</p>
                             <a href="" class="text-dark fw-semibold">Learn more <i
@@ -867,7 +929,9 @@ updateNews();
                         </div>
                         <div class="blog-content mt-5">
                             <!-- <p class="text-muted fw-semibold mb-2">May 25, 2021</p> -->
-                            <a href=""><h5>We calculate clients demand for research.</h5></a>
+                            <a href="">
+                                <h5>We calculate clients demand for research.</h5>
+                            </a>
                             <p class="fs-15 text-muted">He nicked it tickety boo harry the cras bargy chap mush spiffing
                                 spend a penny.</p>
                             <a href="" class="text-dark fw-semibold">Learn more <i
@@ -880,140 +944,6 @@ updateNews();
         <!-- end container -->
     </section>
     <!-- end blog -->
-
-
-
-    <!-- start contact -->
-    <section class="contact pt-5 pb-0" id="contact">
-        <!-- start container -->
-        <div class="container">
-
-            <div class="shape-1">
-                <img src="images/testi/shape.png" alt="" class="img-fluid">
-            </div>
-
-            <div class="contact-item">
-                <div class="row align-items-center">
-                    <div class="col-lg-5">
-                        <div class="contact-info">
-                            <div class="mb-4">
-                                <h3>Let's Connect</h3>
-                                <p class="text-muted mb-0">Looking for help? Fill the form and start a new adventure.
-                                </p>
-                            </div>
-
-                            <hr>
-
-                            <div class="info-content mt-4">
-                                <h6>Address :</h6>
-                                <div class="d-flex">
-                                    <div class="icon">
-                                        <i class="mdi mdi-home-outline fs-24 text-primary"></i>
-                                    </div>
-                                    <div class="icon-content ms-3">
-                                        <p class="mb-0 fs-15">744 New York Ave, Brooklyn, Kings,<br>
-                                            New York 10224</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="info-content mt-4 pt-2">
-                                <h6>Phone :</h6>
-                                <div class="d-flex">
-                                    <div class="icon">
-                                        <i class="mdi mdi-phone-outline fs-24 text-primary"></i>
-                                    </div>
-                                    <div class="icon-content ms-3">
-                                        <p class="mb-0 fs-15">(+642) 245 356 432</p>
-                                        <p class="mb-0 fs-15">(+420) 336 476 328</p>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="info-content mt-4 pt-2">
-                                <h6>Support :</h6>
-                                <div class="d-flex">
-                                    <div class="icon">
-                                        <i class="mdi mdi-email-outline fs-24 text-primary"></i>
-                                    </div>
-                                    <div class="icon-content ms-3">
-                                        <p class="mb-0 fs-15">hellosuppot@gmail.com</p>
-                                        <p class="mb-0 fs-15">help@.com</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-7 ">
-                        <div class="custom-form mt-4 ">
-                            <form method="post" name="myForm" onsubmit="return validateForm()">
-
-                                <h6 class="mb-0 text-muted">Let's talk</h6>
-                                <h3>Enter your project details</h3>
-                                <p class=" fs-15 text-muted">Content here, content here', making it look like
-                                    readable English. Many desktop publishing packages.</p>
-                                <p id="error-msg" style="opacity: 1;">
-                                    <!-- <div class="alert alert-warning">*Please enter a Name*</div> -->
-                                </p>
-
-
-                                <div id="simple-msg"></div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input name="name" id="name" type="text" class="form-control contact-form"
-                                                placeholder="Your name">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input name="email" id="email" type="email"
-                                                class="form-control contact-form" placeholder="Your email">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="form-group mt-2">
-                                            <input type="text" class="form-control contact-form" id="subject"
-                                                placeholder="Your Subject..">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="form-group mt-2">
-                                            <textarea name="comments" id="comments" rows="4"
-                                                class="form-control contact-form h-auto"
-                                                placeholder="Your message..."></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row my-2">
-                                    <div class="col-lg-12 d-grid">
-                                        <input type="submit" id="submit" name="send"
-                                            class="submitBnt btn btn-rounded btn-primary" value="Send Message">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="shape-2">
-                <img src="images/testi/shape-2.png" alt="" class="img-fluid">
-            </div>
-
-            <div class="shape-3 ">
-                <img src="images/testi/shape-3.png" alt="" class="img-fluid">
-            </div>
-        </div>
-        <!-- end container -->
-    </section>
-    <!-- end contact -->
 
 
     <!-- start footer -->
