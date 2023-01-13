@@ -58,6 +58,7 @@
     }
     
     &-description {
+        color:black;
         margin-top: 8px;
         margin-bottom: 0;
         display: -webkit-box;
@@ -71,6 +72,6 @@
     }
     
     &:hover {
-        transform: scale(1.05);
+        transform: scale(1.01);
     }
 }

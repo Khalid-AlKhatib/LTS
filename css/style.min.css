@@ -2330,7 +2330,7 @@ body[data-layout-mode=dark] .contact .custom-form .form-group .form-control {
   margin: 10px 0;
 }
 .footer .footer-text li a {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(255, 255, 255);
   font-size: 15px;
   transition: all 0.5s;
 }
@@ -2366,7 +2366,7 @@ body[data-layout-mode=dark] .contact .custom-form .form-group .form-control {
 }
 .footer .icon-item .social-icon {
   border-radius: 18px 18px 18px 0;
-  border: 1px dashed rgba(47, 180, 174, 0.2);
+  border: 1px dashed rgba(216, 237, 236, 0.2);
   text-align: center;
   margin: 0 5px;
   transition: all 0.5s ease-in-out;
