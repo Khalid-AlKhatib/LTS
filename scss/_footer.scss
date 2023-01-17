@@ -11,7 +11,7 @@
         li {
             margin: 10px 0;
             a {
-                color: rgba($white, 0.5);
+                color: rgba($white, 0.0);
                 font-size: 15px;
                 transition: all 0.5s;
             }
@@ -80,7 +80,7 @@
 }
 
 .bottom-footer{
-    background-color: #15233b;
+    background-color: #5b885d;
 }
 
 @media (max-width:1200px) {
