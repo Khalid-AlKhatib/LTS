@@ -540,7 +540,7 @@ body[data-layout-mode=dark] .nav-sticky .navbar-brand span, body[data-layout-mod
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: forma-djr-micro, sans-serif;
   overflow-x: hidden !important;
   color: #1c2f50;
 }
@@ -557,7 +557,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: forma-djr-micro, sans-serif
   font-weight: 600;
   line-height: 1.4;
 }

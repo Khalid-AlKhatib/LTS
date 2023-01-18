@@ -536,7 +536,7 @@ body[data-layout-mode=dark] .nav-sticky .navbar-brand span, body[data-layout-mod
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family:forma-djr-micro, sans-serif
   overflow-x: hidden !important;
   color: #1c2f50;
 }
@@ -553,7 +553,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family:forma-djr-micro, sans-serif
   font-weight: 600;
   line-height: 1.4;
 }
@@ -1193,7 +1193,7 @@ hr {
 }
 
 .bg-soft-white {
-  background-color: rgba(255, 255, 255, 0.2) !important;
+  background-color: rgba(255, 255, 255, 0.4) !important;
 }
 
 .text-white {
@@ -2333,7 +2333,7 @@ body[data-layout-mode=dark] .blog .blog-content a {
 }
 
 .contact {
-  background-color: rgba(37, 88, 171, 0.05);
+  background-color: rgba(37, 88, 171, 0.08);
 }
 .contact .contact-item .custom-form {
   position: relative;
@@ -2406,7 +2406,7 @@ body[data-layout-mode=dark] .contact .custom-form .form-group .form-control {
   color: #2fb4ae;
 }
 .footer .linkedin-box {
-  background-color: rgba(47, 180, 174, 0.1);
+  background-color: rgba(47, 180, 174, 0.4);
   padding: 20px;
   border-radius: 14px;
 }
