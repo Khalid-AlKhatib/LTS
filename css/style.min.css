@@ -2053,7 +2053,7 @@ body[data-layout-mode=dark] .home-6 .bottom-item .video-button i {
 }
 .about-me .nav-pills .nav-item .nav-link.active, .about-me .nav-pills .nav-item .nav-link:active, .about-me .nav-pills .nav-item .nav-link:focus {
   animation: color-change 6s linear infinite;
-  border-bottom: solid 2px #ff1493;
+  border-bottom: solid 2px #0c5c21;
   background-color: transparent;
 }
 
@@ -2275,7 +2275,7 @@ body[data-layout-mode=dark] .blog .blog-content a {
   border-radius: 20px;
   background-color: #ffffff;
   animation: color-change 6s linear infinite;
-  border-left: solid 4px #ff1493;
+  border-left: solid 4px #0b513e;
 }
 .contact .contact-item .custom-form .contact-form {
   margin-bottom: 15px;

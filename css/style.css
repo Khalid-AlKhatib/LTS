@@ -1333,7 +1333,7 @@ body[data-layout-mode=dark] .breadcrumb {
   min-height: 100vh;
   align-items: center;
   display: flex;
-  background-color: rgba(37, 88, 171, 0.05);
+  background-color: rgb(235, 238, 243);
 }
 .home .typewrite > .wrap {
   border-right: 0.08em solid #1c2f50;
