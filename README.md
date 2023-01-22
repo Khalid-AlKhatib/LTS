@@ -1,2 +1,2 @@
-# CLS
+# LTS
 Language Technology and Society
