@@ -72,16 +72,16 @@
                         <a href="../index.html#news" class="nav-link ">News</a>
                     </li>
                     <li class="nav-item dropdown dropdown-hover">
-                       <a href="../research/research.html" class="nav-link ">Research</a>
+                        <a href="" class="nav-link ">Research</a>
                     </li>
                     <li class="nav-item active">
                         <a href="../index.html#members" class="nav-link active">Members</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Publications</a>
+                       <a href="../publications/publications.html" class="nav-link ">Publications</a>
                     </li>
                     <li class="nav-item">
-                        <a href="../index.html#teaching" class="nav-link">Teaching</a>
+                        <a href="../teaching/teaching.html" class="nav-link">Teaching</a>
                     </li>
                     <li class="nav-item">
                         <a href="../index.html#open-positions" class="nav-link">Open Positions</a>
@@ -100,33 +100,121 @@
     </nav>
     <!-- Navbar End -->
 
- <!-- start publications -->
-    <section class="section publications" id="publications">
-
+      <!-- start teaching -->
+    <section class="section teaching" id="teaching">
         <!-- start container -->
         <div class="container">
-            <div class="text-center mb-5">
-               <!-- <h6 class="mb-0 text-muted fs-15">Publications</h6>-->
-                <h2>Selected Publications</h2>
-
-            </div>
-            <div id="publications" class="iknow_tm_main_section">
-                <div class="iknow_tm_publications">
-
-                    <div id="publications-list"></div>
-
-                    <script src="https://assets.webis.de/js/filter.js"></script>
-                    <script src="https://assets.webis.de/js/selection.js"></script>
-                    <script>
-                        includeBibentries(document.getElementById("publications-list"), "author:khalid+al-khatib");
-                    </script>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-5">
+                        <h6 class="mb-0 text-muted fs-15">Teaching</h6> 
+                        <h2>Our Courses</h2>
+                      <!--   <p class="para-width text-muted mb-0 fs-15">As a research group, we are committed to educating
+                            the next generation of scientists and engineers.
+                            Our members have taught a variety of courses, including:</p>-->
+                    </div>
                 </div>
-
             </div>
-            <!-- end container -->
 
+
+            <ul class="nav nav-pills justify-content-center" id="teachingTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="teaching2023-tab" data-bs-toggle="tab" data-bs-target="#teaching2023"
+                        type="button" role="tab" aria-controls="teaching2023" aria-selected="true">2023</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="teaching2022-tab" data-bs-toggle="tab" data-bs-target="#teaching2022"
+                        type="button" role="tab" aria-controls="teaching2022" aria-selected="false">2022</button>
+                </li>
+            </ul>
+            <div class="tab-content mt-5" id="teachingTabContent">
+                <div class="tab-pane fade show active" id="teaching2023" role="tabpanel" aria-labelledby="teaching2023-tab">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <a href="https://ocasys.rug.nl/current/catalog/course/LIX025M05" class="info-item d-block text-body mt-4 pt-2">
+                                <div class="p-4">
+                                    <div class="research avatar-sm bg-soft-purple text-center">
+                                        <i class="mdi mdi-desktop-classic fs-24 text-purple"></i>
+                                    </div>
+                                    <h6 class="mt-4">Language Technology Project</h6>
+                                    <p class="text-muted fs-15">	
+                                        In this project-based course, students are going to work on a natural language processing challenge.
+                                         A challenge is a practical task in NLP related to a particular research topic.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="https://ocasys.rug.nl/current/catalog/course/LIX017P05" class="info-item d-block text-body mt-4 pt-2">
+                                <div class="p-4">
+                                    <div class="research avatar-sm bg-soft-danger text-center">
+                                        <i class="mdi mdi-file-tree fs-24 text-danger"></i>
+                                    </div>
+                                    <h6 class="mt-4">Project Text Analysis</h6>
+                                    <p class="text-muted fs-15">	
+                                        This is an introductory course to processing large amounts of textual data. 
+                                        The basics of language processing will be introduced both from a theoretical and practical perspectives.</p>
+                                </div>
+                            </a>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="teaching2022" role="tabpanel" aria-labelledby="teaching2022-tab">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <a href="https://ocasys.rug.nl/current/catalog/course/LIX021P05" class="info-item d-block text-body mt-4 pt-2">
+                                <div class="p-4">
+                                    <div class="research avatar-sm bg-soft-purple text-center">
+                                        <i class="mdi mdi-desktop-classic fs-24 text-purple"></i>
+                                    </div>
+                                    <h6 class="mt-4">Introduction to Programming I</h6>
+                                    <p class="text-muted fs-15">This course, together with the subsequent courses Introduction to 
+                                        Programming II and Advanced Programming, constitutes a basic course unit in the curriculum of 
+                                        Information Science, where the student learns to program.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="https://ocasys.rug.nl/2021-2022/catalog/course/LIX025M05" class="info-item d-block text-body mt-4 pt-2">
+                                <div class="p-4">
+                                    <div class="research avatar-sm bg-soft-purple text-center">
+                                        <i class="mdi mdi-desktop-classic fs-24 text-purple"></i>
+                                    </div>
+                                    <h6 class="mt-4">Language Technology Project</h6>
+                                    <p class="text-muted fs-15">	
+                                        In this project-based course, students are going to work on a natural language processing challenge.
+                                         A challenge is a practical task in NLP related to a particular research topic.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="https://ocasys.rug.nl/2021-2022/catalog/course/LIX999B10?legacy=true" class="info-item d-block text-body mt-4 pt-2">
+                                <div class="p-4">
+                                    <div class="research avatar-sm bg-soft-success text-center">
+                                        <i class="mdi mdi-memory fs-24 text-success"></i>
+                                    </div>
+                                    <h6 class="mt-4">Information Science BA Thesis</h6>
+                                    <p class="text-muted fs-15 ">	
+                                        The Bachelors degree programme in Information Science is concluded by a research project of 
+                                        limited scope, in which students are expected to set up, conduct and report on their own research.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 
+                <ul>
+                    <li>Introduction to Computer Science</li>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Introduction to Machine Learning</li>
+                    <li>Advanced Machine Learning</li>
+                </ul> -->
+        </div>
+        <!-- end container -->
     </section>
-    <!-- end publications -->
+    <!-- end teaching -->
 
     <section class=" footer">
         <!-- start container -->
