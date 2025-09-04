@@ -4,7 +4,7 @@
 
 
 .home {
-  min-height: clamp(768px, 100vh, 1080px);
+  min-height: auto;
   align-items: center;
   display: flex;
   background-color: $muted-light;
@@ -185,7 +185,6 @@
       }
     }
   }
-
 }
 
 

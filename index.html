@@ -223,30 +223,30 @@
 
 <!-- start updated news, collaberation, positions -->
 
-<div class="member-right-col col-8 col-md-8">
+<div class="member-right-col">
     <div class="member-content d-flex flex-column h-100">
         <div>
             <ul class="nav nav-pills mb-3 mt-4 pt-2" id="pills-tab" role="tablist">
                 
                 <li class="nav-item" id="nav-bottom" role="presentation">
-                    <button class="nav-bottom" onclick="location.href='#tools'" id="pills-home-tab" data-bs-toggle="pill"
+                    <button class="nav-bottom" id="tools-btn" data-target-section="#tools" data-bs-toggle="pill"
                         data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
                         aria-selected="true">Tools</button>
                 </li>
 
 
                 <li class="nav-item" id="nav-bottom" role="presentation">
-                    <button class="nav-bottom" onclick="location.href='#news'" id="pills-home-tab" data-bs-toggle="pill"
+                    <button class="nav-bottom" id="news-btn" data-target-section="#news" data-bs-toggle="pill"
                         data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
                         aria-selected="false">News</button>
                 </li>
                 <li class="nav-item" id="nav-bottom" role="presentation">
-                    <button class="nav-bottom" id="pills-profile-tab" onclick="location.href='#collaboration'" data-bs-toggle="pill"
+                    <button class="nav-bottom" id="collab-btn" data-target-section="#collaboration" data-bs-toggle="pill"
                         data-bs-target="#pills-profile" type="button" role="tab"
                         aria-controls="pills-profile" aria-selected="false">Collaboration</button>
                 </li>
                 <li class="nav-item" id="nav-bottom" role="presentation">
-                    <button class="nav-bottom" onclick="location.href='#open-positions'" id="pills-contact-tab" data-bs-toggle="pill"
+                    <button class="nav-bottom" id="open-pos-btn" data-target-section="#open-positions" data-bs-toggle="pill"
                         data-bs-target="#pills-contact" type="button" role="tab"
                         aria-controls="pills-contact" aria-selected="false">Open Positions</button>
                 </li>
@@ -254,10 +254,6 @@
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                     aria-labelledby="pills-home-tab">
-                    <div class="p-3">
-                        <!-- <p> 2025.July
-                        </p> -->
-                    </div>
                 </div>
                 <div class="tab-pane fade" id="pills-contact" role="tabpanel"
                     aria-labelledby="pills-contact-tab">
@@ -373,137 +369,44 @@
                 </div>
             </div>
 
-            <ul class="nav nav-pills justify-content-center" id="newsTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="news2023-tab" data-bs-toggle="tab" data-bs-target="#news2023"
-                        type="button" role="tab" aria-controls="news2023" aria-selected="true">2023</button>
+            <ul class="news-list">
+                <li>
+                    <a href="#" class="news-item">
+                        <p class="news-item-date text-muted fs-12 m-0">01 January 2023</p>
+                        <h5 class="news-item-title">Tenured!!</h5>
+                        <p class="news-item-description">Khalid Al-Khatib got tenure!</p>
+                    </a>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="news2022-tab" data-bs-toggle="tab" data-bs-target="#news2022"
-                        type="button" role="tab" aria-controls="news2022" aria-selected="false">2022</button>
+                <li>
+                    <a href="https://sdproc.org/2023/sharedtasks.html#sacl" class="news-item" target="_blank" rel="noopener noreferrer">
+                        <p class="news-item-date text-muted fs-12 m-0">01 January 2023</p>
+                        <h5 class="news-item-title">New Shared Task on Scholarly Document Processing</h5>
+                        <p class="news-item-description">Khalid Al-Khatib co-organizes the 'SACL23: Structured Abstracts for Computational Linguistics' shared task at the Fourth Workshop on Scholarly Document Processing.</p>
+                    </a>
                 </li>
-                <!-- <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="news2021-tab" data-bs-toggle="tab" data-bs-target="#news2021"
-                        type="button" role="tab" aria-controls="news2021" aria-selected="false">2021</button>
-                </li> -->
+                <li>
+                    <a href="https://www.ai.uni-hannover.de/en/institut/veranstaltungen/veranstaltungen-detailansicht/news/invited-talk-on-the-perception-of-stance-and-frame-biases-in-language" class="news-item" target="_blank" rel="noopener noreferrer">
+                        <p class="news-item-date text-muted fs-12 m-0">15 December 2022</p>
+                        <h5 class="news-item-title">Invited talk at the Leibniz University Hannover, Germany.</h5>
+                        <p class="news-item-description">Khalid Al-Khatib gave a talk at the Institute of Artificial Intelligence at the Leibniz University Hannover on the topic of perception of stance and frame biases in language.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://bnaic2022.uantwerpen.be/program/#day2-fact" class="news-item" target="_blank" rel="noopener noreferrer">
+                        <p class="news-item-date text-muted fs-12 m-0">8 November 2022</p>
+                        <h5 class="news-item-title">Invited talk at BNAIC/BeNeLearn 2022, Belgium</h5>
+                        <p class="news-item-description">Khalid Al-Khatib gave a talk in the session of FACT (FACulty focusing on the FACts of AI) at the Joint International Scientific Conferences on AI and Machine Learning (BNAIC/BeNeLearn 2022). The talk title is 'Deliberation, Not Persuasion: How AI Can Support More Effective Discussions'.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/22432" class="news-item" target="_blank" rel="noopener noreferrer">
+                        <p class="news-item-date text-muted fs-12 m-0">23-28 October 2022</p>
+                        <h5 class="news-item-title">Co-Organizing a Dagstuhl Seminar, Germany</h5>
+                        <p class="news-item-description">Khalid Al-Khatib co-organized the Dagstuhl seminar: 'Towards a Unified Model of Scholarly Argumentation'</p>
+                    </a>
+                </li>
             </ul>
-            <div class="tab-content mt-5" id="newsTabContent">
-                <div class="tab-pane fade show active" id="news2023" role="tabpanel" aria-labelledby="news2023-tab">
-                    <div class="row gy-4">
-                        <div class="col-12 col-sm-6 col-lg-12 align-items-center">
-                            
-                            <a href="" class="news-card">
-                                <p class="news-card-date text-muted fs-12 m-0">01 January 2023</p>
-                                <h5 class="news-card-title">Tenured!!</h5>
-                                <p class="news-card-description ">Khalid Al-Khatib got tenure!</p>
-                            </a>
-                        </div>
-                            <div class="col-12 col-sm-6 col-lg-12">
-                                <a href="https://sdproc.org/2023/sharedtasks.html#sacl" class="news-card">
-                                    <p class="news-card-date text-muted fs-12 m-0">01 January 2023</p>
-                                    <h5 class="news-card-title">New Shared Task on Scholarly Document Processing</h5>
-                                    <p class="news-card-description">Khalid Al-Khatib co-organizes the 'SACL23: Structured Abstracts for Computational Linguistics' shared task at the Fourth Workshop on Scholarly Document Processing. </p>
-                                </a>
-                        </div>
-                    </div>
-                
-                    
-                </div>
-                <div class="tab-pane fade" id="news2022" role="tabpanel" aria-labelledby="news2022-tab">
-                    <div class="row gy-4">
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <a href="https://www.ai.uni-hannover.de/en/institut/veranstaltungen/veranstaltungen-detailansicht/news/invited-talk-on-the-perception-of-stance-and-frame-biases-in-language" target="_blank" rel="noopener noreferrer" class="news-card">
-                                <p class="news-card-date text-muted fs-12 m-0">15 December 2022</p>
-                                <h5 class="news-card-title">Invited talk at the Leibniz University Hannover, Germany.</h5>
-                                <p class="news-card-description  ">Khalid Al-Khatib gave a talk at the 
-                                    Institute of Artificial Intelligence at the Leibniz University Hannover on the topic of 
-                                    perception of stance and frame biases in language.</p>
-                            </a>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <a href="https://bnaic2022.uantwerpen.be/program/#day2-fact" class="news-card">
-                                <p class="news-card-date text-muted fs-12 m-0">8 November 2022</p>
-                                <h5 class="news-card-title">Invited talk at BNAIC/BeNeLearn 2022, Belgium</h5>
-                                <p class="news-card-description ">Khalid Al-Khatib gave a talk in the session of FACT
-                                     (FACulty focusing on the FACts of AI) at the Joint International Scientific Conferences 
-                                     on AI and Machine Learning (BNAIC/BeNeLearn 2022). The talk title is 'Deliberation, Not Persuasion: How AI Can Support More Effective Discussions'.</p>
-                            </a>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <a href="https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/22432" target="_blank" rel="noopener noreferrer" class="news-card">
-                                <p class="news-card-date text-muted fs-12 m-0">23-28 October 2022</p>
-                                <h5 class="news-card-title">Co-Organizing a Dagstuhl Seminar, Germany</h5>
-                                <p class="news-card-description ">Khalid Al-Khatib co-organized the Dagstuhl seminar:
-                                    'Towards a Unified Model of Scholarly Argumentation'</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="news2021" role="tabpanel" aria-labelledby="news2021-tab">
-                    <div class="row gy-4">
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <a href="#" class="news-card">
-                                <div class="news-card-icon"><img src="images/news/img-1.png"></div>
-                                <p class="news-card-date text-muted fs-12 m-0">26 December 2020</p>
-                                <h5 class="news-card-title">News Item 13</h5>
-                                <p class="news-card-description  ">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a
-                                    fermentum enim.</p>
-                            </a>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <a href="#" class="news-card">
-                                <div class="news-card-icon"><img src="images/news/img-2.png"></div>
-                                <p class="news-card-date text-muted fs-12 m-0">26 December 2021</p>
-                                <h5 class="news-card-title">News Item 14</h5>
-                                <p class="news-card-description ">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a
-                                    fermentum enim.</p>
-                            </a>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <a href="#" class="news-card">
-                                <div class="news-card-icon"><img src="images/news/img-3.png"></div>
-                                <p class="news-card-date text-muted fs-12 m-0">26 December 2021</p>
-                                <h5 class="news-card-title">News Item 15</h5>
-                                <p class="news-card-description  ">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a
-                                    fermentum enim.</p>
-                            </a>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <a href="#" class="news-card">
-                                <div class="news-card-icon"><img src="images/news/img-2.png"></div>
-                                <p class="news-card-date text-muted fs-12 m-0">26 December 2021</p>
-                                <h5 class="news-card-title">News Item 16</h5>
-                                <p class="news-card-description  ">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a
-                                    fermentum enim.</p>
-                            </a>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <a href="#" class="news-card">
-                                <div class="news-card-icon"><img src="images/news/img-3.png"></div>
-                                <p class="news-card-date text-muted fs-12 m-0">26 December 2021</p>
-                                <h5 class="news-card-title">News Item 17</h5>
-                                <p class="news-card-description ">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a
-                                    fermentum enim.</p>
-                            </a>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <a href="#" class="news-card">
-                                <div class="news-card-icon"><img src="images/news/img-1.png"></div>
-                                <p class="news-card-date text-muted fs-12 m-0">26 December 2021</p>
-                                <h5 class="news-card-title">News Item 18</h5>
-                                <p class="news-card-description ">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a
-                                    fermentum enim.</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
         <!-- end container -->
     </section>
@@ -599,6 +502,46 @@
 
     <!-- App Js -->
     <script src="js/app.js"></script>
+    <script>
+      // Set Tools as active on load without scrolling if already in viewport
+      window.addEventListener('DOMContentLoaded', function () {
+        const toolsBtn = document.getElementById('tools-btn');
+        if (toolsBtn) {
+          toolsBtn.classList.add('active');
+          toolsBtn.setAttribute('aria-selected', 'true');
+        }
+
+        // Intercept clicks to avoid scrolling if target section is already fully visible
+        const navButtons = document.querySelectorAll('.nav-bottom[data-target-section]');
+        navButtons.forEach(function (btn) {
+          btn.addEventListener('click', function (e) {
+            const targetSel = btn.getAttribute('data-target-section');
+            const section = document.querySelector(targetSel);
+            if (!section) return;
+
+            const rect = section.getBoundingClientRect();
+            const vh = window.innerHeight || document.documentElement.clientHeight;
+            const intersectsViewport = rect.top < vh && rect.bottom > 0; // any visible portion
+
+            if (intersectsViewport) {
+              e.preventDefault();
+              // Do not change scroll; just update pill active state
+              document.querySelectorAll('.nav-bottom').forEach(function (b) {
+                b.classList.remove('active');
+                b.setAttribute('aria-selected', 'false');
+              });
+              btn.classList.add('active');
+              btn.setAttribute('aria-selected', 'true');
+              return;
+            }
+
+            // Smoothly scroll into view only if section is not visible
+            e.preventDefault();
+            section.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          });
+        });
+      });
+    </script>
 
 </body>
 

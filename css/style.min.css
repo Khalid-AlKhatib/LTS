@@ -164,12 +164,12 @@
     margin-top: 0px;
   }
 }
-@media only screen and (min-width: 1600px) {
+/* @media only screen and (min-width: 1600px) {
   .container-fluid {
     padding-right: 200px;
     padding-left: 200px;
   }
-}
+} */
 @media (max-width: 992px) {
   .navbar .navbar-nav .nav-item .nav-link {
     padding: 12px 15px;
@@ -1334,10 +1334,32 @@ body[data-layout-mode=dark] .breadcrumb {
   border-radius: 60px;
 }
 
-.home {
-  min-height: clamp(768px, 100vh, 1080px);
-  align-items: center;
-  display: flex;
+@media (min-width: 1201px) {
+  .home {
+    min-height: auto;
+    align-items: center;
+    display: flex;
+  }
+  #home-slider-item0 {
+    margin-top: 7%;
+  }
+  #tools {
+    padding-top: 20px !important;
+  }
+}
+@media (min-width: 1400px) {
+  .home {
+    min-height: auto;
+    align-items: center;
+    display: flex;
+  }
+  #home-slider-item0 {
+    margin-top: 5%;
+  }
+  #tools {
+    padding-top: 20px !important;
+
+  }
 }
 .home .typewrite > .wrap {
   border-right: 0.08em solid #1c2f50;
@@ -1916,6 +1938,38 @@ body[data-layout-mode=dark] .home-6 .bottom-item .video-button i {
   color: #ffffff;
 }
 
+/* Simplified news list */
+.news-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 auto;
+  max-width: 800px;
+}
+.news-item {
+  display: block;
+  padding: 16px 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 1px solid rgba(151, 151, 151, 0.2);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  color: inherit;
+}
+.news-item + .news-item {
+  margin-top: 12px;
+}
+.news-item:hover {
+  background-color: rgba(47, 180, 174, 0.06);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+.news-item-title {
+  color: #2fb4ae;
+  margin: 4px 0 0 0;
+}
+.news-item-description {
+  margin: 6px 0 0 0;
+}
+
 .news-card {
   position: relative;
   display: flex;
@@ -2119,6 +2173,14 @@ body[data-layout-mode=dark] .service .info-item {
 
 .collaboration {
   /* background-color: rgba(37, 171, 114, 0.05); */
+}
+
+/* Accordion thumbnails */
+.accordion-thumb {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .open-position {
