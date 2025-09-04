@@ -1,0 +1,23 @@
+[
+  {
+    "label": "Args.me",
+    "url": "https://args.me",
+    "iconUrl": "https://args.me/favicon.ico"
+  },
+  {
+    "label": "Summary-explorer",
+    "url": "https://tldr.webis.de/",
+    "iconUrl": "https://tldr.webis.de/favicon.ico"
+  },
+  {
+    "label": "tldr-progress",
+    "url": "https://tldr-progress.demo.webis.de",
+    "iconUrl": "https://www.tldr-progress.de/favicon.ico"
+  },
+  {
+    "label": "WAT-SL",
+    "url": "https://github.com/webis-de/wat",
+    "iconUrl": "https://github.githubassets.com/favicons/favicon.png"
+  }
+]
+
