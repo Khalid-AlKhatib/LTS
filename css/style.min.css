@@ -1926,7 +1926,6 @@ body[data-layout-mode=dark] .home-6 .bottom-item .video-button i {
 
 .news {
   background-color: rgba(37, 171, 114, 0.05);
-  min-height: 100vh;
 }
 .news .nav-pills .nav-link {
   padding: 8px 24px;
@@ -1944,6 +1943,12 @@ body[data-layout-mode=dark] .home-6 .bottom-item .video-button i {
   padding-left: 0;
   margin: 0 auto;
   max-width: 800px;
+}
+.news-list li {
+  margin-bottom: 20px;
+}
+.news-list li:last-child {
+  margin-bottom: 0;
 }
 .news-item {
   display: block;

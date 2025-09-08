@@ -226,7 +226,7 @@
 <div class="member-right-col">
     <div class="member-content d-flex flex-column h-100">
         <div>
-            <ul class="nav nav-pills mb-3 mt-4 pt-2" id="pills-tab" role="tablist">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 
                 <li class="nav-item" id="nav-bottom" role="presentation">
                     <button class="nav-bottom" id="tools-btn" data-target-section="#tools" data-bs-toggle="pill"
@@ -369,43 +369,26 @@
                 </div>
             </div>
 
-            <ul class="news-list">
-                <li>
-                    <a href="#" class="news-item">
-                        <p class="news-item-date text-muted fs-12 m-0">01 January 2023</p>
-                        <h5 class="news-item-title">Tenured!!</h5>
-                        <p class="news-item-description">Khalid Al-Khatib got tenure!</p>
-                    </a>
+            <ul class="nav nav-pills justify-content-center" id="newsTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" data-year="2023" type="button" role="tab">2023</button>
                 </li>
-                <li>
-                    <a href="https://sdproc.org/2023/sharedtasks.html#sacl" class="news-item" target="_blank" rel="noopener noreferrer">
-                        <p class="news-item-date text-muted fs-12 m-0">01 January 2023</p>
-                        <h5 class="news-item-title">New Shared Task on Scholarly Document Processing</h5>
-                        <p class="news-item-description">Khalid Al-Khatib co-organizes the 'SACL23: Structured Abstracts for Computational Linguistics' shared task at the Fourth Workshop on Scholarly Document Processing.</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.ai.uni-hannover.de/en/institut/veranstaltungen/veranstaltungen-detailansicht/news/invited-talk-on-the-perception-of-stance-and-frame-biases-in-language" class="news-item" target="_blank" rel="noopener noreferrer">
-                        <p class="news-item-date text-muted fs-12 m-0">15 December 2022</p>
-                        <h5 class="news-item-title">Invited talk at the Leibniz University Hannover, Germany.</h5>
-                        <p class="news-item-description">Khalid Al-Khatib gave a talk at the Institute of Artificial Intelligence at the Leibniz University Hannover on the topic of perception of stance and frame biases in language.</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://bnaic2022.uantwerpen.be/program/#day2-fact" class="news-item" target="_blank" rel="noopener noreferrer">
-                        <p class="news-item-date text-muted fs-12 m-0">8 November 2022</p>
-                        <h5 class="news-item-title">Invited talk at BNAIC/BeNeLearn 2022, Belgium</h5>
-                        <p class="news-item-description">Khalid Al-Khatib gave a talk in the session of FACT (FACulty focusing on the FACts of AI) at the Joint International Scientific Conferences on AI and Machine Learning (BNAIC/BeNeLearn 2022). The talk title is 'Deliberation, Not Persuasion: How AI Can Support More Effective Discussions'.</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/22432" class="news-item" target="_blank" rel="noopener noreferrer">
-                        <p class="news-item-date text-muted fs-12 m-0">23-28 October 2022</p>
-                        <h5 class="news-item-title">Co-Organizing a Dagstuhl Seminar, Germany</h5>
-                        <p class="news-item-description">Khalid Al-Khatib co-organized the Dagstuhl seminar: 'Towards a Unified Model of Scholarly Argumentation'</p>
-                    </a>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-year="2022" type="button" role="tab">2022</button>
                 </li>
             </ul>
+            <div class="tab-content mt-5" id="newsTabContent">
+                <div class="tab-pane fade show active" id="news2023" role="tabpanel">
+                    <ul class="news-list" id="news-list-2023">
+                        <!-- Content will be loaded dynamically from news.json -->
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="news2022" role="tabpanel">
+                    <ul class="news-list" id="news-list-2022">
+                        <!-- Content will be loaded dynamically from news.json -->
+                    </ul>
+                </div>
+            </div>
 
         </div>
         <!-- end container -->
@@ -505,46 +488,219 @@
     <!-- Content loader (JSON-driven) -->
     <script src="js/content.js"></script>
     <script>
-      // Set Tools as active on load without scrolling if already in viewport
+      // Scroll Spy functionality for automatic tab activation + Sticky Navigation
       window.addEventListener('DOMContentLoaded', function () {
-        const toolsBtn = document.getElementById('tools-btn');
-        if (toolsBtn) {
-          toolsBtn.classList.add('active');
-          toolsBtn.setAttribute('aria-selected', 'true');
+        const navButtons = document.querySelectorAll('.nav-bottom[data-target-section]');
+        const sections = [];
+        const tabContainer = document.getElementById('pills-tab');
+        const homeSection = document.getElementById('home');
+        
+        // Build sections array
+        navButtons.forEach(function (btn) {
+          const targetSel = btn.getAttribute('data-target-section');
+          const section = document.querySelector(targetSel);
+          if (section) {
+            sections.push({
+              element: section,
+              button: btn,
+              id: targetSel
+            });
+          }
+        });
+
+        // Make navigation sticky when scrolling past home section
+        function handleStickyNav() {
+          if (!tabContainer || !homeSection) return;
+          
+          const homeRect = homeSection.getBoundingClientRect();
+          const shouldStick = homeRect.bottom <= 80; // 80px offset for main navbar
+          
+          if (shouldStick) {
+            tabContainer.style.position = 'fixed';
+            tabContainer.style.top = '77px';
+            tabContainer.style.left = '0';
+            tabContainer.style.right = '0';
+            tabContainer.style.zIndex = '1000';
+            tabContainer.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+            tabContainer.style.backdropFilter = 'blur(10px)';
+            tabContainer.style.padding = '15px 0';
+            tabContainer.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            tabContainer.style.transition = 'all 0.3s ease';
+          } else {
+            tabContainer.style.position = 'static';
+            tabContainer.style.top = 'auto';
+            tabContainer.style.left = 'auto';
+            tabContainer.style.right = 'auto';
+            tabContainer.style.zIndex = 'auto';
+            tabContainer.style.backgroundColor = 'transparent';
+            tabContainer.style.backdropFilter = 'none';
+            tabContainer.style.padding = '0';
+            tabContainer.style.boxShadow = 'none';
+            tabContainer.style.display = 'flex';
+            tabContainer.style.justifyContent = 'center';
+            tabContainer.style.alignItems = 'center';
+          }
         }
 
-        // Intercept clicks to avoid scrolling if target section is already fully visible
-        const navButtons = document.querySelectorAll('.nav-bottom[data-target-section]');
-        navButtons.forEach(function (btn) {
-          btn.addEventListener('click', function (e) {
-            const targetSel = btn.getAttribute('data-target-section');
-            const section = document.querySelector(targetSel);
-            if (!section) return;
+        // Modern Intersection Observer approach for smooth fast scrolling
+        let currentActiveSection = null;
 
-            const rect = section.getBoundingClientRect();
-            const vh = window.innerHeight || document.documentElement.clientHeight;
-            const intersectsViewport = rect.top < vh && rect.bottom > 0; // any visible portion
+        function updateActiveButton(activeSection) {
+          if (activeSection && activeSection !== currentActiveSection) {
+            navButtons.forEach(function (btn) {
+              btn.classList.remove('active');
+              btn.setAttribute('aria-selected', 'false');
+            });
+            activeSection.button.classList.add('active');
+            activeSection.button.setAttribute('aria-selected', 'true');
+            currentActiveSection = activeSection;
+          }
+        }
 
-            if (intersectsViewport) {
-              e.preventDefault();
-              // Do not change scroll; just update pill active state
-              document.querySelectorAll('.nav-bottom').forEach(function (b) {
-                b.classList.remove('active');
-                b.setAttribute('aria-selected', 'false');
-              });
-              btn.classList.add('active');
-              btn.setAttribute('aria-selected', 'true');
+        // Simplified and reliable scroll detection
+        function updateActiveTab() {
+          const scrollY = window.scrollY;
+          const windowHeight = window.innerHeight;
+          const documentHeight = document.documentElement.scrollHeight;
+          
+          // Special case: bottom of page
+          if (scrollY + windowHeight >= documentHeight - 100) {
+            updateActiveButton(sections[sections.length - 1]);
+            return;
+          }
+
+          // Find the section that's most prominently in view
+          let bestSection = null;
+          let bestScore = -1;
+
+          sections.forEach(function(section) {
+            const rect = section.element.getBoundingClientRect();
+            const sectionTop = rect.top;
+            const sectionBottom = rect.bottom;
+            const sectionHeight = rect.height;
+
+            // Skip if section is completely out of view
+            if (sectionBottom < 0 || sectionTop > windowHeight) {
               return;
             }
 
-            // Smoothly scroll into view only if section is not visible
+            // Calculate visibility score
+            let score = 0;
+            
+            // How much of the section is visible?
+            const visibleTop = Math.max(0, sectionTop);
+            const visibleBottom = Math.min(windowHeight, sectionBottom);
+            const visibleHeight = Math.max(0, visibleBottom - visibleTop);
+            const visibilityRatio = visibleHeight / sectionHeight;
+            
+            // How much of the viewport does this section occupy?
+            const viewportOccupancy = visibleHeight / windowHeight;
+            
+            // Base score: combination of section visibility and viewport occupancy
+            score = (visibilityRatio * 0.4) + (viewportOccupancy * 0.6);
+            
+            // Bonus for sections that are well-positioned in viewport (not just at top)
+            const sectionCenter = sectionTop + (sectionHeight / 2);
+            const viewportCenter = windowHeight / 2;
+            const distanceFromCenter = Math.abs(sectionCenter - viewportCenter);
+            const centerBonus = Math.max(0, 1 - (distanceFromCenter / (windowHeight / 2))) * 0.3;
+            score += centerBonus;
+            
+            // Small bonus for sections that have their top visible (but not too much)
+            if (sectionTop >= -50 && sectionTop <= 200) {
+              score += 0.1;
+            }
+            
+            // Penalty for sections that are mostly cut off at the top
+            if (sectionTop < -sectionHeight * 0.7) {
+              score *= 0.2;
+            }
+
+            if (score > bestScore) {
+              bestScore = score;
+              bestSection = section;
+            }
+          });
+
+          if (bestSection) {
+            updateActiveButton(bestSection);
+          }
+        }
+
+        // Fallback scroll-based detection (simplified)
+        function fallbackScrollDetection() {
+          const scrollY = window.scrollY;
+          const windowHeight = window.innerHeight;
+          const documentHeight = document.documentElement.scrollHeight;
+
+          // Bottom detection
+          if (scrollY + windowHeight >= documentHeight - 50) {
+            updateActiveButton(sections[sections.length - 1]);
+            return;
+          }
+
+          // Simple center-based detection
+          const viewportCenter = scrollY + windowHeight / 2;
+          let closestSection = sections[0];
+          let closestDistance = Infinity;
+
+          sections.forEach(function(section) {
+            const rect = section.element.getBoundingClientRect();
+            const sectionCenter = scrollY + rect.top + rect.height / 2;
+            const distance = Math.abs(viewportCenter - sectionCenter);
+
+            if (distance < closestDistance) {
+              closestDistance = distance;
+              closestSection = section;
+            }
+          });
+
+          updateActiveButton(closestSection);
+        }
+
+        // Handle click events for smooth scrolling
+        navButtons.forEach(function (btn) {
+          btn.addEventListener('click', function (e) {
             e.preventDefault();
-            section.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            const targetSel = btn.getAttribute('data-target-section');
+            const section = document.querySelector(targetSel);
+            if (section) {
+              // Scroll with offset to account for sticky navigation
+              const offsetTop = section.offsetTop - 140; // 80px navbar + 60px sticky nav
+              window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+              });
+            }
           });
         });
+
+        // Use requestAnimationFrame for smooth 60fps detection
+        let isScrolling = false;
+
+        function handleScroll() {
+          if (!isScrolling) {
+            requestAnimationFrame(function() {
+              handleStickyNav();
+              updateActiveTab();
+              isScrolling = false;
+            });
+            isScrolling = true;
+          }
+        }
+
+        // Listen for scroll events
+        window.addEventListener('scroll', handleScroll, { passive: true });
+
+        // Initial calls
+        setTimeout(function() {
+          handleStickyNav();
+          updateActiveTab();
+        }, 100);
       });
     </script>
 
 </body>
 
+</html>
 </html>

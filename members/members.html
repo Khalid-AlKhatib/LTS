@@ -107,11 +107,15 @@
                 <div class="members-group col-12 col-lg-10">
                     <ul class="nav nav-pills justify-content-center" id="membersTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="profmembers-tab" data-bs-toggle="tab" data-bs-target="#profmembers"
+                            <button class="nav-link active" id="allmembers-tab" data-bs-toggle="tab" data-bs-target="#allmembers"
+                                type="button" role="tab" aria-controls="allmembers" aria-selected="true">All</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profmembers-tab" data-bs-toggle="tab" data-bs-target="#profmembers"
                                 type="button" role="tab" aria-controls="profmembers" aria-selected="false">Faculty</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link " id="phdmembers-tab" data-bs-toggle="tab" data-bs-target="#phdmembers"
+                            <button class="nav-link" id="phdmembers-tab" data-bs-toggle="tab" data-bs-target="#phdmembers"
                                 type="button" role="tab" aria-controls="phdmembers" aria-selected="false">PhD</button>
                         </li>
                         <!-- <li class="nav-item" role="presentation">
@@ -126,8 +130,11 @@
                     </ul>
                     <div class="tab-content mt-5" id="membersTabContent">
 
+                        <div class="tab-pane fade show active" id="allmembers" role="tabpanel" aria-labelledby="allmembers-tab">
+                            <!-- All members will be loaded dynamically -->
+                        </div>
 
-                        <div class="tab-pane fade show active" id="profmembers" role="tabpanel" aria-labelledby="profmembers-tab">
+                        <div class="tab-pane fade" id="profmembers" role="tabpanel" aria-labelledby="profmembers-tab">
                             
                             <div class="member mt-4 p-4">
                                 <div class="row gy-4 gx-4 gx-xl-5">
@@ -187,7 +194,7 @@
 
 
 
-                        <div class="tab-pane fade show" id="phdmembers" role="tabpanel" aria-labelledby="phdmembers-tab">
+                        <div class="tab-pane fade" id="phdmembers" role="tabpanel" aria-labelledby="phdmembers-tab">
              
                             <div class="member mt-4 p-4">
                                 <div class="row gy-4 gx-4 gx-xl-5">

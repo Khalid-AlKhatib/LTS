@@ -37,20 +37,22 @@
     }).join('');
   }
 
-  // News (tabbed years)
+  // News (tabbed years with list format)
   function renderNewsForYear(year, newsData) {
-    var container = document.getElementById('row-news' + year);
+    var container = document.getElementById('news-list-' + year);
     if (!container) return;
     var list = Array.isArray(newsData[year]) ? newsData[year] : [];
     container.innerHTML = list.map(function (item) {
+      var href = item.url || '#';
+      var target = item.url ? ' target="_blank" rel="noopener noreferrer"' : '';
       return (
-        '<div class="col-12 col-sm-6 col-lg-12">' +
-          '<a href="' + (item.url || '#') + '" class="news-card" target="' + (item.url ? '_blank' : '_self') + '" rel="noopener noreferrer">' +
-            '<p class="news-card-date text-muted fs-12 m-0">' + (item.date || '') + '</p>' +
-            '<h5 class="news-card-title">' + (item.title || '') + '</h5>' +
-            '<p class="news-card-description">' + (item.desc || '') + '</p>' +
+        '<li>' +
+          '<a href="' + href + '" class="news-item"' + target + '>' +
+            '<p class="news-item-date text-muted fs-12 m-0">' + (item.date || '') + '</p>' +
+            '<h5 class="news-item-title">' + (item.title || '') + '</h5>' +
+            '<p class="news-item-description">' + (item.desc || '') + '</p>' +
           '</a>' +
-        '</div>'
+        '</li>'
       );
     }).join('');
   }
@@ -73,9 +75,10 @@
         renderNewsForYear(yr, newsData);
       });
     });
-    // initial render
-    var initial = (tabBtns[0] && tabBtns[0].getAttribute('data-year')) || '2023';
-    renderNewsForYear(initial, newsData);
+    // initial render for all available years
+    Object.keys(newsData || {}).forEach(function (year) {
+      renderNewsForYear(year, newsData);
+    });
   }
 
   // News fallback: single list (.news-list)
@@ -260,10 +263,26 @@ function renderMembers(data) {
     );
   }
 
+  // Render All members (Faculty + PhD)
+  var allRoot = document.getElementById('allmembers');
+  if (allRoot) {
+    var allMembers = [];
+    if (Array.isArray(data.faculty)) {
+      allMembers = allMembers.concat(data.faculty);
+    }
+    if (Array.isArray(data.phd)) {
+      allMembers = allMembers.concat(data.phd);
+    }
+    allRoot.innerHTML = allMembers.map(card).join('');
+  }
+
+  // Render Faculty members
   var profRoot = document.getElementById('profmembers');
   if (profRoot && Array.isArray(data.faculty)) {
     profRoot.innerHTML = data.faculty.map(card).join('');
   }
+  
+  // Render PhD members
   var phdRoot = document.getElementById('phdmembers');
   if (phdRoot && Array.isArray(data.phd)) {
     phdRoot.innerHTML = data.phd.map(card).join('');
