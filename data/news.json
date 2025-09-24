@@ -1,0 +1,37 @@
+{
+  "2023": [
+    {
+      "date": "01 January 2023",
+      "title": "Tenured!!",
+      "desc": "Khalid Al-Khatib got tenure!",
+      "url": "#"
+    },
+    {
+      "date": "01 January 2023",
+      "title": "New Shared Task on Scholarly Document Processing",
+      "desc": "Khalid Al-Khatib co-organizes the 'SACL23' shared task at the Fourth Workshop on Scholarly Document Processing.",
+      "url": "https://sdproc.org/2023/sharedtasks.html#sacl"
+    }
+  ],
+  "2022": [
+    {
+      "date": "15 December 2022",
+      "title": "Invited talk at Leibniz University Hannover, Germany",
+      "desc": "Khalid Al-Khatib spoke on perception of stance and frame biases in language.",
+      "url": "https://www.ai.uni-hannover.de/en/institut/veranstaltungen/veranstaltungen-detailansicht/news/invited-talk-on-the-perception-of-stance-and-frame-biases-in-language"
+    },
+    {
+      "date": "08 November 2022",
+      "title": "Invited at BNAIC/BeNeLearn 2022, Belgium",
+      "desc": "“Deliberation, Not Persuasion” session on AI-supported discussions.",
+      "url": "https://bnaic2022.uantwerpen.be/program/#day2-fact"
+    },
+    {
+      "date": "23–28 October 2022",
+      "title": "Co-organizing a Dagstuhl Seminar, Germany",
+      "desc": "“Towards a Unified Model of Scholarly Argumentation.”",
+      "url": "https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/22432"
+    }
+  ]
+}
+

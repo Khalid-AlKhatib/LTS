@@ -1,0 +1,44 @@
+{
+  "themes": [
+    {
+      "title": "Argumentation Strategies",
+      "img": "../images/work/img-1.png",
+      "desc": "We model different argument attributes and identify them automatically in order to study their usage in persuasive and deliberative discourses. The persuasion strategies have been investigated in a couple of papers (COLING‐18, INLG‐2019, ACL‐20‐1), considering the important impact of the target audience (CoNLL‐18, ACL‐20‐3). The deliberation strategies, which are of equal importance to persuasion, have been targeted by modeling the interaction between users on more than five million discussions in Wikipedia (ACL‐18)."
+    },
+    {
+      "title": "Argument Mining and Generation",
+      "img": "../images/work/img-2.png",
+      "desc": "Computational Argumentation studies the automatic understanding and generation of argumentation in natural language. We developed robust argument mining algorithms applied to various forms of web argumentation. We proposed a distant supervision approach for identifying argumentative texts (NAACL‑16), and a supervised model for identifying several types of evidence (COLING‑16‑11), examining their distribution across topics (EMNLP‑17). We also worked on argumentation knowledge graph construction (AAAI‑20) and exploited it for generating arguments (ACL‑21)."
+    },
+    {
+      "title": "Bias Analysis",
+      "img": "../images/work/img-3.png",
+      "desc": "The detection of bias in media as well as in machine learning models is crucial for addressing the ethical side of artificial intelligence. We proposed algorithms for detecting bias in Wikipedia (COLING‑12) and tackling the task of abusive language in online user‑generated discussions (NLP4IF‑19)."
+    }
+  ],
+  "projects": [
+    {
+      "title": "AKASE: Argumentation Knowledge-Graphs for Advanced Search Engines (2024‑)",
+      "img": "../images/work/img-4.png",
+      "desc": "This project seeks to construct argumentation knowledge graphs that encode structured, multi‑perspective arguments, providing search engines with enriched, balanced, and credible content. In an era of information overload, misinformation, and biased narratives, these graphs enable search engines to highlight credible arguments across diverse perspectives. Collaboration with OpenWebSearch.EU grants access to extensive, high‑quality open data essential for building comprehensive graphs and integrating them efficiently within search interfaces."
+    },
+    {
+      "title": "Narratives in Argumentation (2024‑2028)",
+      "img": "../images/blog/img-1.png",
+      "desc": "This project explores the relationship between narratives and argumentation in persuasive communication. By categorizing narratives and exploring structured argumentative schemes, we investigate connections between storytelling techniques and modes of persuasion. The methodology involves annotation and pattern detection to identify narrative elements and their impact on persuasive effects, with applications in conversational AI and text generation."
+    },
+    {
+      "title": "Cross‑domain Arabic Argument Mining (2025‑2026)",
+      "img": "../images/blog/img-2.png",
+      "desc": "The lack of annotated datasets limits Arabic argument mining across domains like politics, education, and social media. This study proposes a cross‑domain annotated dataset focusing on claims and evidence types, serving as a benchmark for research and practical use. Leveraging transfer learning and few‑shot learning, it aims to enhance cross‑domain analysis and support applications such as media analysis, debate systems, and misinformation detection."
+    }
+  ],
+  "thesisTopics": [
+    {
+      "title": "Thesis Topics (examples)",
+      "img": "../images/news/img-1.png",
+      "desc": "We regularly supervise theses on argument mining, bias analysis, and applied NLP for social good. Contact us with your interests; we can tailor a topic aligned with ongoing projects."
+    }
+  ]
+}
+

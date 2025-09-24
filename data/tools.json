@@ -1,0 +1,27 @@
+[
+  {
+    "label": "Args.me",
+    "url": "https://args.me",
+    "iconType": "svg",
+    "iconSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" aria-labelledby=\"args-icon-title\" width=\"24\" height=\"24\" viewBox=\"0 0 32 32\" class=\"icon\"><title id=\"args-icon-title\">The args.me icon. A parrot composed of right-angled pie shapes</title><path d=\"M0 16c1 15 15 16 32 16-2-15-14-16-29-16z\" fill=\"#208235\"></path><path d=\"M16 0C7 0 0 7 0 16h3C3 9 9 3 16 3z\" fill=\"#8ec63f\"></path><path d=\"M16 0v16h16c0-8.85-7.15-16-16-16z\" fill=\"#bd1319\"></path><circle cx=\"9.85\" cy=\"8.35\" r=\"1.85\"></circle></svg>"
+  },
+  {
+    "label": "",
+    "url": "https://tldr.webis.de/",
+    "iconType": "svg",
+    "iconSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"120\" height=\"32\" viewBox=\"0 0 120 32\" class=\"icon\"><rect width=\"120\" height=\"32\" rx=\"4\" fill=\"#2b4d78\"/><text x=\"8\" y=\"20\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"white\">Summary</text><text x=\"55\" y=\"20\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#f6ad55\">Explorer</text></svg>"
+  },
+  {
+    "label": "",
+    "url": "https://tldr-progress.demo.webis.de",
+    "iconType": "svg",
+    "iconSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"120\" height=\"32\" viewBox=\"0 0 120 32\" class=\"icon\"><rect width=\"120\" height=\"32\" rx=\"4\" fill=\"#f5f5f5\"/><text x=\"8\" y=\"20\" font-family=\"Arial, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#4a5568\">TL;DR Progress</text></svg>"
+  },
+  {
+    "label": "WAT-SL",
+    "url": "https://github.com/webis-de/wat",
+    "iconType": "image",
+    "iconUrl": "https://github.githubassets.com/favicons/favicon.png"
+  }
+]
+

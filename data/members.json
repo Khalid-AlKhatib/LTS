@@ -1,0 +1,50 @@
+{
+  "faculty": [
+    {
+      "name": "Khalid Al-Khatib",
+      "image": "../images/members/Alkhatib2.png",
+      "interests": ["Natural Language Processing", "Computational Argumentation", "Bias Analysis"],
+      "address": "Oude Kijk in 't Jatstraat 26, Groningen",
+      "building": "3408",
+      "room": "1316",
+      "phone": "+49 511 762 5301",
+      "email": "khalid.alkhatib@rug.nl",
+      "profileUrl": "../members/member-1.html"
+    }
+  ],
+  "phd": [
+    {
+      "name": "Maximilian Heinrich",
+      "image": "../images/members/img2.png",
+      "interests": ["Topic 1"],
+      "address": "Oude Kijk in 't Jatstraat 26, Groningen",
+      "building": "3408",
+      "room": "1316",
+      "phone": "+49 511 762 5301",
+      "email": "member1@example.com",
+      "profileUrl": "../members/member-2.html"
+    },
+    {
+      "name": "Sara Nabhani",
+      "image": "../images/members/nabhani.jpeg",
+      "interests": ["Natural Language Processing", "Computational Argumentation", "Computational Narratives", "Propaganda and Persuasion Analysis"],
+      "address": "Oude Kijk in 't Jatstraat 26, Groningen",
+      "building": "1312",
+      "room": "0208",
+      "email": "s.nabhani@rug.nl",
+      "profileUrl": "../members/nabhani.html"
+    },
+    {
+      "name": "Frieso Turkstra",
+      "image": "../images/members/img3.png",
+      "interests": ["Topic 1"],
+      "address": "Oude Kijk in 't Jatstraat 26, Groningen",
+      "building": "3408",
+      "room": "1316",
+      "phone": "+49 511 762 5301",
+      "email": "member1@example.com",
+      "profileUrl": "../members/member-4.html"
+    }
+  ]
+}
+

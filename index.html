@@ -223,30 +223,30 @@
 
 <!-- start updated news, collaberation, positions -->
 
-<div class="member-right-col col-8 col-md-8">
+<div class="member-right-col">
     <div class="member-content d-flex flex-column h-100">
         <div>
-            <ul class="nav nav-pills mb-3 mt-4 pt-2" id="pills-tab" role="tablist">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 
                 <li class="nav-item" id="nav-bottom" role="presentation">
-                    <button class="nav-bottom" onclick="location.href='#tools'" id="pills-home-tab" data-bs-toggle="pill"
+                    <button class="nav-bottom" id="tools-btn" data-target-section="#tools" data-bs-toggle="pill"
                         data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
                         aria-selected="true">Tools</button>
                 </li>
 
 
                 <li class="nav-item" id="nav-bottom" role="presentation">
-                    <button class="nav-bottom" onclick="location.href='#news'" id="pills-home-tab" data-bs-toggle="pill"
+                    <button class="nav-bottom" id="news-btn" data-target-section="#news" data-bs-toggle="pill"
                         data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
                         aria-selected="false">News</button>
                 </li>
                 <li class="nav-item" id="nav-bottom" role="presentation">
-                    <button class="nav-bottom" id="pills-profile-tab" onclick="location.href='#collaboration'" data-bs-toggle="pill"
+                    <button class="nav-bottom" id="collab-btn" data-target-section="#collaboration" data-bs-toggle="pill"
                         data-bs-target="#pills-profile" type="button" role="tab"
                         aria-controls="pills-profile" aria-selected="false">Collaboration</button>
                 </li>
                 <li class="nav-item" id="nav-bottom" role="presentation">
-                    <button class="nav-bottom" onclick="location.href='#open-positions'" id="pills-contact-tab" data-bs-toggle="pill"
+                    <button class="nav-bottom" id="open-pos-btn" data-target-section="#open-positions" data-bs-toggle="pill"
                         data-bs-target="#pills-contact" type="button" role="tab"
                         aria-controls="pills-contact" aria-selected="false">Open Positions</button>
                 </li>
@@ -254,10 +254,6 @@
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                     aria-labelledby="pills-home-tab">
-                    <div class="p-3">
-                        <!-- <p> 2025.July
-                        </p> -->
-                    </div>
                 </div>
                 <div class="tab-pane fade" id="pills-contact" role="tabpanel"
                     aria-labelledby="pills-contact-tab">
@@ -328,10 +324,16 @@
 
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-8">
-                                <div>
+                                <div class="d-flex justify-content-center">
                                     <div class="link-bar">
                                         <a class="tool-link" href="https://args.me" target="_blank">
-                                            <img src="https://args.me/favicon.ico" alt="Args Logo">
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="args-icon-title" width="24" height="24" viewBox="0 0 32 32" class="icon">
+                                                <title id="args-icon-title">The args.me icon. A parrot composed of right-angled pie shapes</title>
+                                                <path d="M0 16c1 15 15 16 32 16-2-15-14-16-29-16z" fill="#208235"></path>
+                                                <path d="M16 0C7 0 0 7 0 16h3C3 9 9 3 16 3z" fill="#8ec63f"></path>
+                                                <path d="M16 0v16h16c0-8.85-7.15-16-16-16z" fill="#bd1319"></path>
+                                                <circle cx="9.85" cy="8.35" r="1.85"></circle>
+                                            </svg>
                                             Args.me
                                         </a>
                                         <a class="tool-link" href="https://tldr.webis.de/" target="_blank">
@@ -375,135 +377,25 @@
 
             <ul class="nav nav-pills justify-content-center" id="newsTab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="news2023-tab" data-bs-toggle="tab" data-bs-target="#news2023"
-                        type="button" role="tab" aria-controls="news2023" aria-selected="true">2023</button>
+                    <button class="nav-link active" data-year="2023" type="button" role="tab">2023</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="news2022-tab" data-bs-toggle="tab" data-bs-target="#news2022"
-                        type="button" role="tab" aria-controls="news2022" aria-selected="false">2022</button>
+                    <button class="nav-link" data-year="2022" type="button" role="tab">2022</button>
                 </li>
-                <!-- <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="news2021-tab" data-bs-toggle="tab" data-bs-target="#news2021"
-                        type="button" role="tab" aria-controls="news2021" aria-selected="false">2021</button>
-                </li> -->
             </ul>
             <div class="tab-content mt-5" id="newsTabContent">
-                <div class="tab-pane fade show active" id="news2023" role="tabpanel" aria-labelledby="news2023-tab">
-                    <div class="row gy-4">
-                        <div class="col-12 col-sm-6 col-lg-12 align-items-center">
-                            
-                            <a href="" class="news-card">
-                                <p class="news-card-date text-muted fs-12 m-0">01 January 2023</p>
-                                <h5 class="news-card-title">Tenured!!</h5>
-                                <p class="news-card-description ">Khalid Al-Khatib got tenure!</p>
-                            </a>
-                        </div>
-                            <div class="col-12 col-sm-6 col-lg-12">
-                                <a href="https://sdproc.org/2023/sharedtasks.html#sacl" class="news-card">
-                                    <p class="news-card-date text-muted fs-12 m-0">01 January 2023</p>
-                                    <h5 class="news-card-title">New Shared Task on Scholarly Document Processing</h5>
-                                    <p class="news-card-description">Khalid Al-Khatib co-organizes the 'SACL23: Structured Abstracts for Computational Linguistics' shared task at the Fourth Workshop on Scholarly Document Processing. </p>
-                                </a>
-                        </div>
-                    </div>
-                
-                    
+                <div class="tab-pane fade show active" id="news2023" role="tabpanel">
+                    <ul class="news-list" id="news-list-2023">
+                        <!-- Content will be loaded dynamically from news.json -->
+                    </ul>
                 </div>
-                <div class="tab-pane fade" id="news2022" role="tabpanel" aria-labelledby="news2022-tab">
-                    <div class="row gy-4">
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <a href="https://www.ai.uni-hannover.de/en/institut/veranstaltungen/veranstaltungen-detailansicht/news/invited-talk-on-the-perception-of-stance-and-frame-biases-in-language" target="_blank" rel="noopener noreferrer" class="news-card">
-                                <p class="news-card-date text-muted fs-12 m-0">15 December 2022</p>
-                                <h5 class="news-card-title">Invited talk at the Leibniz University Hannover, Germany.</h5>
-                                <p class="news-card-description  ">Khalid Al-Khatib gave a talk at the 
-                                    Institute of Artificial Intelligence at the Leibniz University Hannover on the topic of 
-                                    perception of stance and frame biases in language.</p>
-                            </a>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <a href="https://bnaic2022.uantwerpen.be/program/#day2-fact" class="news-card">
-                                <p class="news-card-date text-muted fs-12 m-0">8 November 2022</p>
-                                <h5 class="news-card-title">Invited talk at BNAIC/BeNeLearn 2022, Belgium</h5>
-                                <p class="news-card-description ">Khalid Al-Khatib gave a talk in the session of FACT
-                                     (FACulty focusing on the FACts of AI) at the Joint International Scientific Conferences 
-                                     on AI and Machine Learning (BNAIC/BeNeLearn 2022). The talk title is 'Deliberation, Not Persuasion: How AI Can Support More Effective Discussions'.</p>
-                            </a>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <a href="https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/22432" target="_blank" rel="noopener noreferrer" class="news-card">
-                                <p class="news-card-date text-muted fs-12 m-0">23-28 October 2022</p>
-                                <h5 class="news-card-title">Co-Organizing a Dagstuhl Seminar, Germany</h5>
-                                <p class="news-card-description ">Khalid Al-Khatib co-organized the Dagstuhl seminar:
-                                    'Towards a Unified Model of Scholarly Argumentation'</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="news2021" role="tabpanel" aria-labelledby="news2021-tab">
-                    <div class="row gy-4">
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <a href="#" class="news-card">
-                                <div class="news-card-icon"><img src="images/news/img-1.png"></div>
-                                <p class="news-card-date text-muted fs-12 m-0">26 December 2020</p>
-                                <h5 class="news-card-title">News Item 13</h5>
-                                <p class="news-card-description  ">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a
-                                    fermentum enim.</p>
-                            </a>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <a href="#" class="news-card">
-                                <div class="news-card-icon"><img src="images/news/img-2.png"></div>
-                                <p class="news-card-date text-muted fs-12 m-0">26 December 2021</p>
-                                <h5 class="news-card-title">News Item 14</h5>
-                                <p class="news-card-description ">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a
-                                    fermentum enim.</p>
-                            </a>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <a href="#" class="news-card">
-                                <div class="news-card-icon"><img src="images/news/img-3.png"></div>
-                                <p class="news-card-date text-muted fs-12 m-0">26 December 2021</p>
-                                <h5 class="news-card-title">News Item 15</h5>
-                                <p class="news-card-description  ">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a
-                                    fermentum enim.</p>
-                            </a>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <a href="#" class="news-card">
-                                <div class="news-card-icon"><img src="images/news/img-2.png"></div>
-                                <p class="news-card-date text-muted fs-12 m-0">26 December 2021</p>
-                                <h5 class="news-card-title">News Item 16</h5>
-                                <p class="news-card-description  ">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a
-                                    fermentum enim.</p>
-                            </a>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <a href="#" class="news-card">
-                                <div class="news-card-icon"><img src="images/news/img-3.png"></div>
-                                <p class="news-card-date text-muted fs-12 m-0">26 December 2021</p>
-                                <h5 class="news-card-title">News Item 17</h5>
-                                <p class="news-card-description ">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a
-                                    fermentum enim.</p>
-                            </a>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <a href="#" class="news-card">
-                                <div class="news-card-icon"><img src="images/news/img-1.png"></div>
-                                <p class="news-card-date text-muted fs-12 m-0">26 December 2021</p>
-                                <h5 class="news-card-title">News Item 18</h5>
-                                <p class="news-card-description ">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Nullam sed orci quis sem aliquet posuere sit amet ut eros. Fusce a
-                                    fermentum enim.</p>
-                            </a>
-                        </div>
-                    </div>
+                <div class="tab-pane fade" id="news2022" role="tabpanel">
+                    <ul class="news-list" id="news-list-2022">
+                        <!-- Content will be loaded dynamically from news.json -->
+                    </ul>
                 </div>
             </div>
+
         </div>
         <!-- end container -->
     </section>
@@ -599,7 +491,222 @@
 
     <!-- App Js -->
     <script src="js/app.js"></script>
+    <!-- Content loader (JSON-driven) -->
+    <script src="js/content.js"></script>
+    <script>
+      // Scroll Spy functionality for automatic tab activation + Sticky Navigation
+      window.addEventListener('DOMContentLoaded', function () {
+        const navButtons = document.querySelectorAll('.nav-bottom[data-target-section]');
+        const sections = [];
+        const tabContainer = document.getElementById('pills-tab');
+        const homeSection = document.getElementById('home');
+        
+        // Build sections array
+        navButtons.forEach(function (btn) {
+          const targetSel = btn.getAttribute('data-target-section');
+          const section = document.querySelector(targetSel);
+          if (section) {
+            sections.push({
+              element: section,
+              button: btn,
+              id: targetSel
+            });
+          }
+        });
+
+        // Make navigation sticky when scrolling past home section
+        function handleStickyNav() {
+          if (!tabContainer || !homeSection) return;
+          
+          const homeRect = homeSection.getBoundingClientRect();
+          const shouldStick = homeRect.bottom <= 80; // 80px offset for main navbar
+          
+          if (shouldStick) {
+            tabContainer.style.position = 'fixed';
+            tabContainer.style.top = '77px';
+            tabContainer.style.left = '0';
+            tabContainer.style.right = '0';
+            tabContainer.style.zIndex = '1000';
+            tabContainer.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+            tabContainer.style.backdropFilter = 'blur(10px)';
+            tabContainer.style.padding = '15px 0';
+            tabContainer.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            tabContainer.style.transition = 'all 0.3s ease';
+          } else {
+            tabContainer.style.position = 'static';
+            tabContainer.style.top = 'auto';
+            tabContainer.style.left = 'auto';
+            tabContainer.style.right = 'auto';
+            tabContainer.style.zIndex = 'auto';
+            tabContainer.style.backgroundColor = 'transparent';
+            tabContainer.style.backdropFilter = 'none';
+            tabContainer.style.padding = '0';
+            tabContainer.style.boxShadow = 'none';
+            tabContainer.style.display = 'flex';
+            tabContainer.style.justifyContent = 'center';
+            tabContainer.style.alignItems = 'center';
+          }
+        }
+
+        // Modern Intersection Observer approach for smooth fast scrolling
+        let currentActiveSection = null;
+
+        function updateActiveButton(activeSection) {
+          if (activeSection && activeSection !== currentActiveSection) {
+            navButtons.forEach(function (btn) {
+              btn.classList.remove('active');
+              btn.setAttribute('aria-selected', 'false');
+            });
+            activeSection.button.classList.add('active');
+            activeSection.button.setAttribute('aria-selected', 'true');
+            currentActiveSection = activeSection;
+          }
+        }
+
+        // Simplified and reliable scroll detection
+        function updateActiveTab() {
+          const scrollY = window.scrollY;
+          const windowHeight = window.innerHeight;
+          const documentHeight = document.documentElement.scrollHeight;
+          
+          // Special case: bottom of page
+          if (scrollY + windowHeight >= documentHeight - 100) {
+            updateActiveButton(sections[sections.length - 1]);
+            return;
+          }
+
+          // Find the section that's most prominently in view
+          let bestSection = null;
+          let bestScore = -1;
+
+          sections.forEach(function(section) {
+            const rect = section.element.getBoundingClientRect();
+            const sectionTop = rect.top;
+            const sectionBottom = rect.bottom;
+            const sectionHeight = rect.height;
+
+            // Skip if section is completely out of view
+            if (sectionBottom < 0 || sectionTop > windowHeight) {
+              return;
+            }
+
+            // Calculate visibility score
+            let score = 0;
+            
+            // How much of the section is visible?
+            const visibleTop = Math.max(0, sectionTop);
+            const visibleBottom = Math.min(windowHeight, sectionBottom);
+            const visibleHeight = Math.max(0, visibleBottom - visibleTop);
+            const visibilityRatio = visibleHeight / sectionHeight;
+            
+            // How much of the viewport does this section occupy?
+            const viewportOccupancy = visibleHeight / windowHeight;
+            
+            // Base score: combination of section visibility and viewport occupancy
+            score = (visibilityRatio * 0.4) + (viewportOccupancy * 0.6);
+            
+            // Bonus for sections that are well-positioned in viewport (not just at top)
+            const sectionCenter = sectionTop + (sectionHeight / 2);
+            const viewportCenter = windowHeight / 2;
+            const distanceFromCenter = Math.abs(sectionCenter - viewportCenter);
+            const centerBonus = Math.max(0, 1 - (distanceFromCenter / (windowHeight / 2))) * 0.3;
+            score += centerBonus;
+            
+            // Small bonus for sections that have their top visible (but not too much)
+            if (sectionTop >= -50 && sectionTop <= 200) {
+              score += 0.1;
+            }
+            
+            // Penalty for sections that are mostly cut off at the top
+            if (sectionTop < -sectionHeight * 0.7) {
+              score *= 0.2;
+            }
+
+            if (score > bestScore) {
+              bestScore = score;
+              bestSection = section;
+            }
+          });
+
+          if (bestSection) {
+            updateActiveButton(bestSection);
+          }
+        }
+
+        // Fallback scroll-based detection (simplified)
+        function fallbackScrollDetection() {
+          const scrollY = window.scrollY;
+          const windowHeight = window.innerHeight;
+          const documentHeight = document.documentElement.scrollHeight;
+
+          // Bottom detection
+          if (scrollY + windowHeight >= documentHeight - 50) {
+            updateActiveButton(sections[sections.length - 1]);
+            return;
+          }
+
+          // Simple center-based detection
+          const viewportCenter = scrollY + windowHeight / 2;
+          let closestSection = sections[0];
+          let closestDistance = Infinity;
+
+          sections.forEach(function(section) {
+            const rect = section.element.getBoundingClientRect();
+            const sectionCenter = scrollY + rect.top + rect.height / 2;
+            const distance = Math.abs(viewportCenter - sectionCenter);
+
+            if (distance < closestDistance) {
+              closestDistance = distance;
+              closestSection = section;
+            }
+          });
+
+          updateActiveButton(closestSection);
+        }
+
+        // Handle click events for smooth scrolling
+        navButtons.forEach(function (btn) {
+          btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetSel = btn.getAttribute('data-target-section');
+            const section = document.querySelector(targetSel);
+            if (section) {
+              // Scroll with offset to account for sticky navigation
+              const offsetTop = section.offsetTop - 140; // 80px navbar + 60px sticky nav
+              window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+              });
+            }
+          });
+        });
+
+        // Use requestAnimationFrame for smooth 60fps detection
+        let isScrolling = false;
+
+        function handleScroll() {
+          if (!isScrolling) {
+            requestAnimationFrame(function() {
+              handleStickyNav();
+              updateActiveTab();
+              isScrolling = false;
+            });
+            isScrolling = true;
+          }
+        }
+
+        // Listen for scroll events
+        window.addEventListener('scroll', handleScroll, { passive: true });
+
+        // Initial calls
+        setTimeout(function() {
+          handleStickyNav();
+          updateActiveTab();
+        }, 100);
+      });
+    </script>
 
 </body>
 
+</html>
 </html>
