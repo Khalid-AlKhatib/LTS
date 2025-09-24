@@ -32,7 +32,12 @@
     var bar = $('.link-bar');
     if (!bar || !Array.isArray(tools)) return;
     bar.innerHTML = tools.map(function (t) {
-      var icon = t.iconUrl ? '<img src="' + t.iconUrl + '" alt="' + (t.label || '') + ' Logo">' : '';
+      var icon = '';
+      if (t.iconType === 'svg' && t.iconSvg) {
+        icon = t.iconSvg;
+      } else if (t.iconUrl) {
+        icon = '<img src="' + t.iconUrl + '" alt="' + (t.label || '') + ' Logo">';
+      }
       return '<a class="tool-link" href="' + t.url + '" target="_blank" rel="noopener noreferrer">' + icon + (t.label || '') + '</a>';
     }).join('');
   }

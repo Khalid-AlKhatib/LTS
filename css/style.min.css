@@ -593,6 +593,38 @@ hr {
   opacity: 0.15 !important;
 }
 
+.link-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tool-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.tool-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  color: inherit;
+}
+
+.tool-link svg,
+.tool-link img {
+  flex-shrink: 0;
+}
+
+
 @media (max-width: 768px) {
   .navbar-custom {
     margin-top: 0px;
