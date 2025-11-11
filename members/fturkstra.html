@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>CLS Webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" " />
+    <meta name="keywords" content="" />
+    <meta content="Themesdesign" name="author" />
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" id="bootstrap-style" />
+
+    <!-- Material Icon Css -->
+    <link rel="stylesheet" href="../css/materialdesignicons.min.css" type="text/css" />
+
+    <!-- Unicon Css -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="../css/tiny-slider.css" type="text/css" />
+    <link rel="stylesheet" href="../css/tiny-slider.css.map" type="text/css" />
+    <link rel="stylesheet" href="../css/swiper.min.css" type="text/css" />
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="../css/style.min.css" type="text/css" />
+
+
+</head>
+
+<body>
+
+    <!-- light-dark mode button -->
+    <a href="javascript: void(0);" id="mode" class="mode-btn text-white rounded-end">
+        <i class="uil uil-brightness mode-dark mx-auto"></i>
+        <i class="uil uil-moon bx-spin mode-light"></i>
+    </a>
+
+
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+        <div class="container-fluid custom-container">
+            <a class="navbar-brand logo text-uppercase" href="../index.html">
+                <img src="../images/logo-light.png" class="logo-light" alt="" height="34">
+                <img src="../images/logo-dark.png" class="logo-dark" alt="" height="34">
+            </a>
+
+            <button class="navbar-toggler me-3 order-2 ms-4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto navbar-center">
+                    <li class="nav-item">
+                        <a href="../index.html#home" class="nav-link">Home</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown dropdown-hover">
+                        <a href="../index.html#aboutme" class="nav-link ">About</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a href="../index.html#news" class="nav-link ">News</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a href="../index.html#members" class="nav-link active">Members</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../index.html#publications" class="nav-link">Publication</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../index.html#teaching" class="nav-link">Teaching</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../index.html#open-positions" class="nav-link">Open Positions</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="../index.html#contact" class="nav-link">Contact</a>
+                    </li> -->
+                </ul>
+                <!--end navbar-nav-->
+                <!--<div class="ms-auto ps-2 ps-lg-0">
+                    <a href="" class="btn btn-dark rounded-pill my-3 my-lg-0" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
+                </div> -->
+            </div>
+        </div>
+        <!--end container-->
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- about-me section -->
+    <section class="section about-me" id="aboutme">
+        <!-- container -->
+        <div class="container">
+            <div class="member mt-4 p-4">
+                <div class="row gy-4 gx-4 gx-xl-5">
+                    <div class="member-left-col col-12 col-md-4">
+                        <div class="member-image">
+                            <img src="../images/members/anon-male.jpg" alt="Anonymous male profile picture">
+                        </div>
+                    </div>
+                    <div class="member-right-col col-12 col-md-8">
+                        <div class="member-content d-flex flex-column h-100">
+                            <div>
+                                <h1 class="member-name mb-3">Frieso Turkstra</h1>
+                                <div class="row mb-3">
+                                    <div class="col-12 col-md-6">
+                                        <p class="member-interest mb-2"><i
+                                                class="mdi mdi-test-tube text-primary"></i> Research Interest:
+                                                <ul>
+                                                    <li>Natural Language Processing</li>
+                                                    <li>Computational Argumentation</li>
+                                                </ul>
+                                            </p>
+                                        <!-- <p class="member-phone mb-2"><i class="mdi mdi-phone text-primary"></i>
+                                            Phone: <a href="tel: +49 511 762 5301">+49 511 762 5301</a></p> -->
+                                        <p class="member-email mb-2"><i class="mdi mdi-email text-primary"></i>
+                                            Email: <a href="mailto:fturkstra@rug.nl">f.turkstra@rug.nl</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <p class="member-address mb-2"><i
+                                                class="mdi mdi-map-marker text-primary"></i> Address:
+                                            <span>Oude Kijk in 't Jatstraat 26, Groningen</span></p>
+                                        <p class="member-building mb-2"><i
+                                                class="mdi mdi-office-building text-primary"></i> Building:
+                                            <span>1313</span></p>
+                                        <p class="member-roommb-2"><i class="mdi mdi-door text-primary"></i>
+                                            Room: <span>0305</span></p>
+                                    </div>
+                                </div>
+                                <div class="about-item">
+                                    <h4 class="fw-semibold">Summary</h4>
+                                    <p class="text-muted fs-14 p-0">I have expertise in AI and natural language processing. Skills include training, fine-tuning and deploying large language models in the cloud or on high-performance computing clusters.</p>
+                                </div>          
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <ul class="nav nav-pills mb-3 mt-4 pt-2" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab"
+                            aria-controls="pills-profile" aria-selected="false">Experience</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-contact" type="button" role="tab"
+                            aria-controls="pills-contact" aria-selected="false">Education</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                        aria-labelledby="pills-profile-tab">
+                        <div class="text-muted p-3">
+                            <ul>
+                                <li>Research Assistant: Constructing argumentation knowledge graphs for search engine optimization (2025-2026)</li>
+                                <li>Teaching Assistant: Developed an Android application to conduct Wizard-of-Oz experiments on a personal AI assistant robot (2024)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                        aria-labelledby="pills-contact-tab">
+                        <div class="text-muted p-3">
+                            <ul>
+                                <li>MSc Information Science (2023-2024)</li>
+                                <li>BA Philosophy of AI and Cognitive Sciences (2020-2023)</li>
+                                <li>Honours Programme in Philosophy (2019-2021)</li>
+                                <li>BA European Languages and Cultures (2018-2022)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end about-me -->
+
+    <!-- start footer -->
+    <section class=" footer">
+        <!-- start container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="mt-5">
+                        <a class=" logo text-uppercase" href="../index.html">
+                            <img src="../images/logo-light.png" class="logo-light" alt="" height="32">
+                            <!-- <img src="../images/logo-light.png" class="logo-dark" alt="" height="28"> -->
+                        </a>
+                        <p class="fs-15 text-white-50 mt-4">A Private Limited is the most popular type of partnership
+                            Malta.
+                            The limited liability is, in fact, the only type of company allowed by Companies.</p>
+
+                        <div class="icon-item mt-4">
+                            <div class="d-flex">
+                                <a href="#">
+                                    <div class="social-icon facebook avatar-xs">
+                                        <i class="mdi mdi-facebook "></i>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="social-icon instagram avatar-xs">
+                                        <i class="mdi mdi-instagram "></i>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="social-icon twitter avatar-xs">
+                                        <i class="mdi mdi-twitter"></i>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="social-icon linkedin avatar-xs">
+                                        <i class="mdi mdi-linkedin"></i>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="social-icon pinterest avatar-xs">
+                                        <i class="mdi mdi-pinterest"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-2 mt-4">
+                    <h5 class="text-white">Company</h5>
+
+                    <ul class="footer-text list-unstyled mt-4">
+                        <li><a href="#"><i class="mdi mdi-arrow-right me-2"></i>Security & Provciy</a></li>
+                        <li><a href="#"><i class="mdi mdi-arrow-right me-2"></i>Support</a></li>
+                        <li><a href="#"><i class="mdi mdi-arrow-right me-2"></i>Term & Condition</a></li>
+                        <li><a href="#"><i class="mdi mdi-arrow-right me-2"></i>Contact</a></li>
+                        <li><a href="#"><i class="mdi mdi-arrow-right me-2"></i>About Us</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-3 mt-4">
+                    <h5 class="text-white">Linkedin</h5>
+                    <div class="row">
+                        <div class="col-lg-10">
+                            <div class="linkedin-box mt-4">
+                                <p class="mb-0 text-white-50 fs-15 mb-2">The full monty spiffing good time .</p>
+                                <a href="#" class="fs-15">@Harold.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="linkedin-content d-flex align-items-center">
+                        <div class="icon">
+                            <i class="mdi mdi-linkedin text-white fs-40"></i>
+                        </div>
+                        <div class="icon-content ms-2">
+                            <a href="#" class="text-white-50">Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <h5 class="text-white">Sign up</h5>
+                    <p class="mb-0 text-white-50 mt-4">Follow our newsletter to stay updated about agency.</p>
+                    <div class="input-group my-3">
+                        <input type="text" class="form-control p-3" placeholder="subscribe" aria-label="subscribe"
+                            aria-describedby="basic-addon2">
+                        <a href="" class="input-group-text bg-primary text-white px-4" id="basic-addon2">Go</a>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+
+    <section class="bottom-footer py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <p class="mb-0 text-center text-muted">©
+                        <script>document.write(new Date().getFullYear())</script> Harold. Design with <i
+                            class="mdi mdi-heart text-danger"></i> by <a href="https://themesdesign.in/" target="_blank"
+                            class="text-muted">Themesdesign.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end footer -->
+
+
+    <!--Bootstrap Js-->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+    <!-- Slider Js -->
+    <script src="../js/tiny-slider.js"></script>
+    <script src="../js/swiper.min.js"></script>
+
+    <!-- conter -->
+    <script src="../js/counter.init.js"></script>
+
+    <!-- App Js -->
+    <script src="../js/app.js"></script>
+
+</body>
+
+</html>
