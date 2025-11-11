@@ -36,14 +36,13 @@
     },
     {
       "name": "Frieso Turkstra",
-      "image": "../images/members/img3.png",
-      "interests": ["Topic 1"],
+      "image": "../images/members/anon-male.jpg",
+      "interests": ["Natural Language Processing"],
       "address": "Oude Kijk in 't Jatstraat 26, Groningen",
-      "building": "3408",
-      "room": "1316",
-      "phone": "+49 511 762 5301",
-      "email": "member1@example.com",
-      "profileUrl": "../members/member-4.html"
+      "building": "1313",
+      "room": "0305",
+      "email": "fturkstra@rug.nl",
+      "profileUrl": "../members/fturkstra.html"
     }
   ]
 }
